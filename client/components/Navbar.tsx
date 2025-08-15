@@ -19,8 +19,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-[#121212] h-16 flex items-center justify-center px-4 sm:px-8 lg:px-[420px] relative">
-        <div className="flex max-w-[1080px] w-full items-center justify-between">
+      <nav className="bg-[#121212] h-16 flex items-center px-4 sm:px-8 lg:px-[420px] relative w-full">
+        <div className="flex w-full max-w-[1920px] mx-auto items-center justify-between">
           {/* Logo Section */}
           <Link to="/" className="flex items-end">
             <div className="flex items-center">
