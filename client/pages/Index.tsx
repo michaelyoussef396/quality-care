@@ -279,7 +279,7 @@ export default function Index() {
       <section className="flex justify-center items-center py-20 px-4">
         <div className="flex flex-col justify-center items-center gap-[60px] max-w-[1080px] w-full">
           {/* Section Header */}
-          <div className="flex min-w-full px-4 lg:px-[290px] flex-col justify-center items-center gap-[30px]">
+          <div className="flex min-w-full px-4 sm:px-8 lg:px-[290px] flex-col justify-center items-center gap-[30px]">
             {/* Why Choose Us Badge */}
             <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
               <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
@@ -290,7 +290,7 @@ export default function Index() {
             {/* Main Heading */}
             <div className="flex max-w-[500px] w-full flex-col items-center">
               <div className="text-center">
-                <h2 className="text-[#247FBF] text-center font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                <h2 className="text-[#247FBF] text-center font-inter text-[28px] font-normal leading-[42px] tracking-[0.28px]">
                   <div>Guiding You Through</div>
                   <div>Personalized Care</div>
                 </h2>
@@ -299,7 +299,7 @@ export default function Index() {
           </div>
 
           {/* Section Content */}
-          <div className="flex max-w-[1000px] items-center lg:items-start gap-10 w-full flex-col lg:flex-row">
+          <div className="flex max-w-[1000px] items-start gap-10 w-full flex-col lg:flex-row">
             {/* Left Side - Description */}
             <div className="flex max-w-[500px] flex-col justify-center items-center gap-[19.3px] flex-1">
               {/* Image */}
@@ -334,24 +334,28 @@ export default function Index() {
             <div className="flex flex-col justify-center items-center gap-4 flex-1">
               {/* Expanded Item - Person-Centered Approach */}
               <div className="flex p-5 flex-col justify-center items-center gap-[19.4px] rounded-lg w-full">
-                <div className="flex h-[42px] justify-center lg:justify-between items-center w-full">
-                  <div className="flex items-center gap-4">
+                <div className="flex h-[42px] justify-between items-center w-full">
+                  <div className="flex flex-col justify-center items-start">
                     <span className="text-[#ADADAD] font-inter text-[19px] font-bold leading-7">01</span>
+                  </div>
+                  <div className="flex flex-col justify-center items-start flex-1 ml-4">
                     <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
                       Person-Centered Approach
                     </h4>
                   </div>
-                  <div className="flex w-10 h-10 justify-center items-start">
+                  <div className="flex w-10 h-10 justify-center items-center">
                     <div className="flex-1 h-full rounded-lg bg-[rgba(227,169,121,0.05)] relative">
                       <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px]"></div>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-center items-center lg:items-start gap-5 w-full">
-                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
-                    We listen to you and craft personalized plans tailored to your needs, preferences, and aspirations.
-                  </p>
+                <div className="flex flex-col justify-center items-start gap-5 w-full">
+                  <div className="flex flex-col items-start w-full">
+                    <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                      We listen to you and craft personalized plans tailored to your needs, preferences, and aspirations.
+                    </p>
+                  </div>
 
                   <div className="flex w-full max-w-[440px] justify-center items-center rounded-md">
                     <img
@@ -362,19 +366,21 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="w-full h-px rounded-lg border-b border-[#4A4A4A]"></div>
+                <div className="w-[483px] h-px rounded-lg border-b border-[#4A4A4A]"></div>
               </div>
 
               {/* Collapsed Items */}
               <div className="flex p-5 justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] w-full">
                 <div className="flex h-[42px] justify-between items-center w-full">
-                  <div className="flex items-center gap-4">
+                  <div className="flex flex-col justify-center items-start">
                     <span className="text-[#4A4A4A] font-inter text-2xl font-bold leading-[42px] tracking-[0.28px]">02</span>
+                  </div>
+                  <div className="flex flex-col justify-center items-start flex-1 ml-4">
                     <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
                       Experienced Team
                     </h4>
                   </div>
-                  <div className="flex w-10 h-10 justify-center items-start">
+                  <div className="flex w-10 h-10 justify-center items-center">
                     <div className="flex-1 h-full rounded-lg bg-[rgba(227,169,121,0.05)] relative">
                       <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px]"></div>
                       <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px] rotate-90"></div>
@@ -385,13 +391,15 @@ export default function Index() {
 
               <div className="flex p-5 justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] w-full">
                 <div className="flex h-[42px] justify-between items-center w-full">
-                  <div className="flex items-center gap-4">
-                    <span className="text-[#4A4A4A] font-inter text-2xl font-bold leading-[42px] tracking-[0.28px]">03</span>
+                  <div className="flex flex-col justify-center items-start">
+                    <span className="text-[#4A4A4A] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.28px]">03</span>
+                  </div>
+                  <div className="flex flex-col justify-center items-start flex-1 ml-4">
                     <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
                       Flexibility and Reliability
                     </h4>
                   </div>
-                  <div className="flex w-10 h-10 justify-center items-start">
+                  <div className="flex w-10 h-10 justify-center items-center">
                     <div className="flex-1 h-full rounded-lg bg-[rgba(227,169,121,0.05)] relative">
                       <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px]"></div>
                       <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px] rotate-90"></div>
@@ -402,13 +410,15 @@ export default function Index() {
 
               <div className="flex p-5 justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] w-full">
                 <div className="flex h-[42px] justify-between items-center w-full">
-                  <div className="flex items-center gap-4">
-                    <span className="text-[#4A4A4A] font-inter text-2xl font-bold leading-[42px] tracking-[0.28px]">04</span>
+                  <div className="flex flex-col justify-center items-start">
+                    <span className="text-[#4A4A4A] font-inter text-[23px] font-bold leading-[42px] tracking-[0.28px]">04</span>
+                  </div>
+                  <div className="flex flex-col justify-center items-start flex-1 ml-4">
                     <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
                       Commitment to Excellence
                     </h4>
                   </div>
-                  <div className="flex w-10 h-10 justify-center items-start">
+                  <div className="flex w-10 h-10 justify-center items-center">
                     <div className="flex-1 h-full rounded-lg bg-[rgba(227,169,121,0.05)] relative">
                       <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px]"></div>
                       <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px] rotate-90"></div>
