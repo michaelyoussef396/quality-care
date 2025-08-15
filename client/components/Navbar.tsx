@@ -121,7 +121,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#121212] z-40 md:hidden">
+        <div className="fixed inset-0 bg-[#121212] z-40 lg:hidden">
           <div className="flex flex-col h-full pt-20 px-6">
             {/* Logo in mobile menu */}
             <div className="flex items-center mb-8">
