@@ -528,6 +528,115 @@ export default function Index() {
       {/* Divider */}
       <Divider />
 
+      {/* FAQ Section */}
+      <section className="flex justify-center items-start py-20 px-4">
+        <div className="flex items-start gap-5 max-w-[1080px] w-full">
+          {/* Left Side - Headers */}
+          <div className="flex w-[400px] max-w-[400px] flex-col justify-center items-start gap-[30px]">
+            {/* FAQ Badge */}
+            <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
+              <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                FAQ
+              </div>
+            </div>
+
+            {/* Main Heading */}
+            <div className="flex min-w-[300px] max-w-[300px] flex-col items-start">
+              <h2 className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                Insights & Clarifications
+              </h2>
+              <h2 className="text-[#ADADAD] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                — Frequently Asked Questions.
+              </h2>
+            </div>
+          </div>
+
+          {/* Right Side - Q&A */}
+          <div className="flex w-[660px] flex-col items-start gap-2 rounded-xl">
+            {/* Expanded Question 1 */}
+            <div className="flex p-5 flex-col items-start rounded-xl bg-[#247FBF] w-full">
+              <div className="flex justify-center items-start gap-2.5 w-full">
+                <div className="flex w-8 p-2 justify-center items-center rounded-[32px] bg-white">
+                  <div className="w-4 h-4">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.96938 8.62951C3.03905 8.55959 3.12185 8.50411 3.21301 8.46625C3.30417 8.4284 3.40192 8.40891 3.50063 8.40891C3.59934 8.40891 3.69707 8.4284 3.78824 8.46625C3.8794 8.50411 3.9622 8.55959 4.03188 8.62951L7.25 11.8476V2.66013C7.25 2.46122 7.32902 2.27045 7.46967 2.1298C7.61032 1.98915 7.80109 1.91013 8 1.91013C8.19891 1.91013 8.38968 1.98915 8.53033 2.1298C8.67098 2.27045 8.75 2.46122 8.75 2.66013V11.8476L11.9694 8.62951C12.1103 8.48861 12.3014 8.40946 12.5006 8.40946C12.6999 8.40946 12.891 8.48861 13.0319 8.62951C13.1728 8.7704 13.2519 8.9615 13.2519 9.16076C13.2519 9.36001 13.1728 9.55111 13.0319 9.69201L8.53188 14.192C8.4622 14.2619 8.3794 14.3174 8.28824 14.3553C8.19708 14.3931 8.09934 14.4126 8.00063 14.4126C7.90192 14.4126 7.80417 14.3931 7.71301 14.3553C7.62185 14.3174 7.53905 14.2619 7.46938 14.192L2.96938 9.69201C2.89946 9.62233 2.84398 9.53953 2.80612 9.44837C2.76827 9.35721 2.74878 9.25947 2.74878 9.16076C2.74878 9.06205 2.76827 8.96431 2.80612 8.87314C2.84398 8.78198 2.89946 8.69918 2.96938 8.62951Z" fill="#121212"/>
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex flex-col items-start gap-[7.39px] flex-1">
+                  <div className="flex items-center">
+                    <h3 className="text-[#121212] font-inter text-xl font-semibold leading-7 tracking-[0.2px]">
+                      How do I get started with Quality Care services?
+                    </h3>
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <p className="text-white font-inter text-base font-normal leading-[26.4px] tracking-[0.32px]">
+                      Simply visit our "Contact" page and fill out the inquiry form, or give us a call. Our team will promptly get in touch to schedule an initial consultation and assess your needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full h-px rounded-xl border-b border-[rgba(118,118,118,0.46)] mt-4"></div>
+            </div>
+
+            {/* Collapsed Questions */}
+            <div className="flex p-5 flex-col items-start rounded-xl bg-[#474747] w-full">
+              <div className="flex justify-center items-center gap-2.5 w-full">
+                <div className="flex w-8 p-2 justify-center items-center rounded-[32px] bg-[#247FBF]">
+                  <div className="w-4 h-4">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.0306 8.08094C12.9609 8.15086 12.8782 8.20634 12.787 8.24419C12.6958 8.28205 12.5981 8.30153 12.4994 8.30153C12.4007 8.30153 12.3029 8.28205 12.2118 8.24419C12.1206 8.20634 12.0378 8.15086 11.9681 8.08094L8.75 4.86282V14.0503C8.75 14.2492 8.67098 14.44 8.53033 14.5806C8.38968 14.7213 8.19891 14.8003 8 14.8003C7.80109 14.8003 7.61032 14.7213 7.46967 14.5806C7.32902 14.44 7.25 14.2492 7.25 14.0503V4.86282L4.03062 8.08094C3.88973 8.22184 3.69863 8.30099 3.49937 8.30099C3.30012 8.30099 3.10902 8.22184 2.96812 8.08094C2.82723 7.94005 2.74807 7.74895 2.74807 7.54969C2.74807 7.35044 2.82723 7.15934 2.96812 7.01844L7.46812 2.51844C7.5378 2.44852 7.6206 2.39305 7.71176 2.35519C7.80292 2.31734 7.90066 2.29785 7.99937 2.29785C8.09808 2.29785 8.19583 2.31734 8.28699 2.35519C8.37815 2.39305 8.46095 2.44852 8.53062 2.51844L13.0306 7.01844C13.1005 7.08812 13.156 7.17092 13.1939 7.26208C13.2317 7.35324 13.2512 7.45098 13.2512 7.54969C13.2512 7.6484 13.2317 7.74614 13.1939 7.83731C13.156 7.92847 13.1005 8.01127 13.0306 8.08094Z" fill="#121212"/>
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex flex-col items-start flex-1">
+                  <h3 className="text-white font-inter text-xl font-semibold leading-7 tracking-[0.2px]">
+                    What services does Quality Care provide?
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex p-5 flex-col items-start rounded-xl bg-[#474747] w-full">
+              <div className="flex justify-center items-center gap-2.5 w-full">
+                <div className="flex w-8 p-2 justify-center items-center rounded-[32px] bg-[#247FBF]">
+                  <div className="w-4 h-4">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.0306 8.08094C12.9609 8.15086 12.8782 8.20634 12.787 8.24419C12.6958 8.28205 12.5981 8.30153 12.4994 8.30153C12.4007 8.30153 12.3029 8.28205 12.2118 8.24419C12.1206 8.20634 12.0378 8.15086 11.9681 8.08094L8.75 4.86282V14.0503C8.75 14.2492 8.67098 14.44 8.53033 14.5806C8.38968 14.7213 8.19891 14.8003 8 14.8003C7.80109 14.8003 7.61032 14.7213 7.46967 14.5806C7.32902 14.44 7.25 14.2492 7.25 14.0503V4.86282L4.03062 8.08094C3.88973 8.22184 3.69863 8.30099 3.49937 8.30099C3.30012 8.30099 3.10902 8.22184 2.96812 8.08094C2.82723 7.94005 2.74807 7.74895 2.74807 7.54969C2.74807 7.35044 2.82723 7.15934 2.96812 7.01844L7.46812 2.51844C7.5378 2.44852 7.6206 2.39305 7.71176 2.35519C7.80292 2.31734 7.90066 2.29785 7.99937 2.29785C8.09808 2.29785 8.19583 2.31734 8.28699 2.35519C8.37815 2.39305 8.46095 2.44852 8.53062 2.51844L13.0306 7.01844C13.1005 7.08812 13.156 7.17092 13.1939 7.26208C13.2317 7.35324 13.2512 7.45098 13.2512 7.54969C13.2512 7.6484 13.2317 7.74614 13.1939 7.83731C13.156 7.92847 13.1005 8.01127 13.0306 8.08094Z" fill="#121212"/>
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex flex-col items-start flex-1">
+                  <h3 className="text-white font-inter text-xl font-semibold leading-7 tracking-[0.2px]">
+                    Who is eligible for your services?
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex p-5 flex-col items-start rounded-xl bg-[#474747] w-full">
+              <div className="flex justify-center items-center gap-2.5 w-full">
+                <div className="flex w-8 p-2 justify-center items-center rounded-[32px] bg-[#247FBF]">
+                  <div className="w-4 h-4">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.0306 8.08094C12.9609 8.15086 12.8782 8.20634 12.787 8.24419C12.6958 8.28205 12.5981 8.30153 12.4994 8.30153C12.4007 8.30153 12.3029 8.28205 12.2118 8.24419C12.1206 8.20634 12.0378 8.15086 11.9681 8.08094L8.75 4.86282V14.0503C8.75 14.2492 8.67098 14.44 8.53033 14.5806C8.38968 14.7213 8.19891 14.8003 8 14.8003C7.80109 14.8003 7.61032 14.7213 7.46967 14.5806C7.32902 14.44 7.25 14.2492 7.25 14.0503V4.86282L4.03062 8.08094C3.88973 8.22184 3.69863 8.30099 3.49937 8.30099C3.30012 8.30099 3.10902 8.22184 2.96812 8.08094C2.82723 7.94005 2.74807 7.74895 2.74807 7.54969C2.74807 7.35044 2.82723 7.15934 2.96812 7.01844L7.46812 2.51844C7.5378 2.44852 7.6206 2.39305 7.71176 2.35519C7.80292 2.31734 7.90066 2.29785 7.99937 2.29785C8.09808 2.29785 8.19583 2.31734 8.28699 2.35519C8.37815 2.39305 8.46095 2.44852 8.53062 2.51844L13.0306 7.01844C13.1005 7.08812 13.156 7.17092 13.1939 7.26208C13.2317 7.35324 13.2512 7.45098 13.2512 7.54969C13.2512 7.6484 13.2317 7.74614 13.1939 7.83731C13.156 7.92847 13.1005 8.01127 13.0306 8.08094Z" fill="#121212"/>
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex flex-col items-start flex-1">
+                  <h3 className="text-white font-inter text-xl font-semibold leading-7 tracking-[0.2px]">
+                    How are services personalized to my needs?
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <Divider />
+
       {/* CTA Section */}
       <section className="bg-[#247FBF] py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
