@@ -2,21 +2,48 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 font-inter">
-            Welcome to{" "}
-            <span className="text-[#247FBF]">Quality Care</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-inter">
-            Providing exceptional healthcare services with compassion, expertise, and dedication to improving lives in our community.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#247FBF] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors font-inter">
-              Learn More About Us
-            </button>
-            <button className="border-2 border-[#247FBF] text-[#247FBF] px-8 py-3 rounded-lg font-semibold hover:bg-[#247FBF] hover:text-white transition-colors font-inter">
-              Contact Us Today
+      <section className="flex justify-center items-center py-20 px-4 min-h-[465px]">
+        <div className="flex flex-col justify-center items-center gap-6 max-w-[1080px] w-full px-4 sm:px-8 lg:px-[190px]">
+          <div className="flex max-w-[700px] w-full flex-col justify-center items-center gap-[30px]">
+            {/* Quality Care Badge */}
+            <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
+              <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                QUALITY CARE
+              </div>
+            </div>
+
+            {/* Title and Description */}
+            <div className="flex flex-col justify-center items-center gap-2">
+              {/* Main Heading */}
+              <div className="flex max-w-[600px] w-full flex-col items-center">
+                <div className="text-center">
+                  <h1 className="text-[#121212] text-center font-inter text-[32px] sm:text-[48px] font-bold leading-[1.1] tracking-[0.48px]">
+                    <div>Where Compassion</div>
+                    <div>Meets Empowerment</div>
+                  </h1>
+                </div>
+              </div>
+
+              {/* Description */}
+              <div className="flex flex-col items-center max-w-[700px]">
+                <p className="text-[#121212] text-center font-inter text-base font-normal leading-[24.8px] tracking-[0.32px] px-4">
+                  At Quality Care, we are dedicated to supporting individuals with disabilities on their journey to independence and fulfillment. Our compassionate team works closely with you, ensuring personalized, high-quality services that empower you to lead a life of dignity and choice.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="flex items-center">
+            <button className="flex items-center gap-4 px-5 py-[6px] pl-5 pr-[10px] rounded-[24px] bg-[#247FBF] hover:bg-[#1e6a9f] transition-colors group">
+              <span className="text-white text-center font-inter text-[15px] font-medium leading-6 tracking-[0.15px]">
+                Start Your Journey With Us
+              </span>
+              <div className="flex w-9 h-9 justify-center items-center rounded-[90px] bg-white">
+                <svg width="18" height="18" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  <path d="M14.8438 4.78003V12.0925C14.8438 12.3163 14.7549 12.5309 14.5966 12.6891C14.4384 12.8474 14.2238 12.9363 14 12.9363C13.7762 12.9363 13.5616 12.8474 13.4034 12.6891C13.2451 12.5309 13.1562 12.3163 13.1562 12.0925V6.81909L5.59695 14.377C5.43844 14.5355 5.22346 14.6245 4.9993 14.6245C4.77513 14.6245 4.56015 14.5355 4.40164 14.377C4.24313 14.2185 4.15408 14.0035 4.15408 13.7793C4.15408 13.5552 4.24313 13.3402 4.40164 13.1817L11.9609 5.62378H6.6875C6.46372 5.62378 6.24911 5.53488 6.09088 5.37665C5.93264 5.21842 5.84375 5.00381 5.84375 4.78003C5.84375 4.55625 5.93264 4.34164 6.09088 4.18341C6.24911 4.02517 6.46372 3.93628 6.6875 3.93628H14C14.2238 3.93628 14.4384 4.02517 14.5966 4.18341C14.7549 4.34164 14.8438 4.55625 14.8438 4.78003Z" fill="black"/>
+                </svg>
+              </div>
             </button>
           </div>
         </div>
