@@ -81,7 +81,7 @@ export default function Index() {
           </div>
 
           {/* Services Content */}
-          <div className="flex flex-col justify-center items-center gap-[60px] w-full">
+          <div className="flex flex-col justify-center items-center gap-[60px] w-full lg:justify-center lg:items-center">
             {/* Personal Support Services */}
             <div className="flex flex-col lg:flex-row items-start gap-20 w-full">
               <div className="flex flex-col justify-center items-start gap-5 flex-1">
