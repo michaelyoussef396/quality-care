@@ -179,9 +179,9 @@ export default function Index() {
             </div>
 
             {/* Community Engagement Services */}
-            <div className="flex flex-col lg:flex-row items-start gap-20 w-full">
-              <div className="flex flex-col justify-center items-start gap-5 flex-1">
-                <div className="flex flex-col justify-center items-start gap-[-0.5px] w-full">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-20 w-full">
+              <div className="flex flex-col justify-center items-center lg:items-start gap-5 flex-1">
+                <div className="flex flex-col justify-center items-center lg:items-start gap-[-0.5px] w-full">
                   <div className="flex flex-col items-start">
                     <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
                       Community Engagement Services
