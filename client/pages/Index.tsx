@@ -435,13 +435,13 @@ export default function Index() {
       <Divider />
 
       {/* Process Section */}
-      <section className="flex justify-center items-center py-20 px-4">
-        <div className="flex flex-col items-center gap-[60px] max-w-[1080px] w-full">
+      <section className="flex justify-center items-center py-20 px-4 w-full sm:w-auto">
+        <div className="flex flex-col items-center gap-[60px] max-w-[1080px] w-full justify-center items-center text-center sm:justify-start sm:items-center sm:text-left">
           {/* Section Header */}
           <div className="flex min-w-full px-4 lg:px-[190px] flex-col justify-center items-center gap-[30px]">
             {/* Process Badge */}
             <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
-              <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+              <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px] text-center sm:text-center">
                 Process
               </div>
             </div>
@@ -450,7 +450,7 @@ export default function Index() {
             <div className="flex max-w-[700px] w-full flex-col items-center">
               <div className="text-center">
                 <h2 className="text-[#247FBF] text-center font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px] mb-2">
-                  Our Methodology—
+                  Our Methodology
                 </h2>
                 <h2 className="text-[#ADADAD] text-center font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
                   Supporting Your Path to Independence with Care and Precision
@@ -460,7 +460,7 @@ export default function Index() {
           </div>
 
           {/* Process Steps */}
-          <div className="flex max-w-[501px] flex-col justify-center items-center gap-[60px] relative">
+          <div className="flex max-w-[501px] flex-col justify-center items-center gap-[60px] relative w-full max-w-[721px] sm:max-w-[501px]">
             {/* Vertical Line */}
             <div className="absolute left-10 top-[71px] w-0.5 h-[344px] bg-[#4A4A4A] z-0"></div>
 
