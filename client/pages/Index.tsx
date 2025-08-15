@@ -299,7 +299,7 @@ export default function Index() {
           </div>
 
           {/* Section Content */}
-          <div className="flex max-w-[1000px] items-start gap-10 w-full flex-col lg:flex-row">
+          <div className="flex max-w-[1000px] items-center lg:items-start gap-10 w-full flex-col lg:flex-row">
             {/* Left Side - Description */}
             <div className="flex max-w-[500px] flex-col justify-center items-center gap-[19.3px] flex-1">
               {/* Image */}
