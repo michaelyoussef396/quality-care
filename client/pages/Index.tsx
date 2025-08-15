@@ -637,18 +637,80 @@ export default function Index() {
       {/* Divider */}
       <Divider />
 
-      {/* CTA Section */}
-      <section className="bg-[#247FBF] py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6 font-inter">
-            Ready to Experience Quality Care?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 font-inter">
-            Contact us today to schedule your appointment or learn more about our services.
-          </p>
-          <button className="bg-white text-[#247FBF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors font-inter">
-            Get Started
-          </button>
+      {/* Contact CTA Section */}
+      <section className="flex justify-center items-center bg-[#4A4A4A] w-full">
+        <div className="flex flex-col items-center max-w-[1080px] w-full min-h-[471px]">
+          <div className="flex p-10 items-end gap-10 rounded-[20px] w-full">
+            {/* Left Side - Title and Info */}
+            <div className="flex flex-col justify-center items-start flex-1">
+              <div className="flex flex-col justify-center items-start gap-[6px] w-full">
+                <div className="flex pr-20 flex-col justify-center items-start gap-[30px]">
+                  {/* Contact Us Badge */}
+                  <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
+                    <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                      Contact Us
+                    </div>
+                  </div>
+
+                  {/* Main Heading */}
+                  <div className="flex max-w-[320px] flex-col items-start">
+                    <h2 className="text-white font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                      Get in Touch— Let Us Support Your Journey to Independence
+                    </h2>
+                  </div>
+
+                  {/* Description */}
+                  <div className="flex min-w-[398px] max-w-[398px] flex-col items-start">
+                    <p className="text-white font-inter text-xl font-bold leading-7">
+                      We're here to answer your questions and help you get started with personalized care services. Contact us today, and let's begin working together toward your goals.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Separator Line */}
+                <div className="w-[480px] h-px bg-[rgba(87,87,87,0.30)]"></div>
+              </div>
+            </div>
+
+            {/* Right Side - Contact Form */}
+            <div className="flex flex-col justify-center items-center w-full flex-1">
+              <form className="flex flex-col justify-center items-start gap-3 w-full">
+                {/* Name and Email Fields */}
+                <div className="flex flex-col justify-center items-start gap-3 w-full">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className="flex p-4 flex-col items-start w-full rounded-lg bg-[rgba(219,219,219,0.08)] text-white placeholder-[rgba(255,255,255,0.6)] font-inter text-base border-none outline-none"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="flex p-4 flex-col items-start w-full rounded-lg bg-[rgba(219,219,219,0.08)] text-white placeholder-[rgba(255,255,255,0.6)] font-inter text-base border-none outline-none"
+                  />
+                </div>
+
+                {/* Message Textarea */}
+                <textarea
+                  placeholder="Message"
+                  rows={8}
+                  className="flex p-4 flex-col items-start w-full rounded-lg bg-[rgba(219,219,219,0.08)] text-white placeholder-[rgba(255,255,255,0.6)] font-inter text-base leading-[22.4px] border-none outline-none resize-none"
+                ></textarea>
+
+                {/* Submit Button */}
+                <button
+                  type="submit"
+                  className="flex p-4 justify-center items-center w-full rounded-lg bg-[#247FBF] hover:bg-[#1e6a9f] transition-colors"
+                >
+                  <span className="text-[#121212] text-center font-inter text-base font-semibold leading-[22.4px]">
+                    Let Us Know
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          {/* Bottom Border */}
+          <div className="w-full h-px rounded-[20px] border-b border-[#4A4A4A]"></div>
         </div>
       </section>
     </div>
