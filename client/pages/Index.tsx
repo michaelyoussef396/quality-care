@@ -462,7 +462,7 @@ export default function Index() {
           {/* Process Steps */}
           <div className="flex max-w-[501px] flex-col justify-center items-center gap-[60px] relative w-full max-w-[721px] sm:max-w-[501px]">
             {/* Vertical Line */}
-            <div className="absolute left-10 top-[71px] w-0.5 h-[344px] bg-[#4A4A4A] z-0"></div>
+            <div className="absolute left-10 top-[71px] w-0.5 h-[464px] bg-[#4A4A4A] z-0"></div>
 
             {/* Step 01 */}
             <div className="flex justify-center items-start gap-4 w-full relative z-10">
