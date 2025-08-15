@@ -473,14 +473,14 @@ export default function Index() {
                   </svg>
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-start gap-[-0.92px] flex-1">
-                <div className="flex min-w-[405px] flex-col items-start mb-4">
-                  <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+              <div className="flex flex-col justify-center items-start gap-[-0.92px] flex-1 justify-center items-center w-full sm:justify-start sm:items-start sm:w-auto">
+                <div className="flex min-w-[405px] flex-col items-start mb-4 sm:min-w-[405px] min-w-full">
+                  <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px] text-center sm:text-left">
                     Initial Consultation and Needs Assessment
                   </h3>
                 </div>
                 <div className="flex flex-col items-start">
-                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px] text-center sm:text-left">
                     Our journey begins with a one-on-one consultation to understand your unique needs, goals, and preferences. This allows us to craft a tailored care plan that aligns with your vision for independence.
                   </p>
                 </div>
@@ -496,14 +496,14 @@ export default function Index() {
                   </svg>
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-start gap-[-0.805px] flex-1">
-                <div className="flex min-w-[405px] flex-col items-start mb-4">
-                  <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+              <div className="flex flex-col justify-center items-start gap-[-0.805px] flex-1 justify-center items-center w-full sm:justify-start sm:items-start sm:w-auto">
+                <div className="flex min-w-[405px] flex-col items-start mb-4 sm:min-w-[405px] min-w-full">
+                  <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px] text-center sm:text-left">
                     Personalized Plan Development
                   </h3>
                 </div>
                 <div className="flex flex-col items-start">
-                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px] text-center sm:text-left">
                     Once we've assessed your needs, we develop a personalized support plan. This plan outlines the services, resources, and steps needed to empower you to achieve your goals.
                   </p>
                 </div>
@@ -519,14 +519,14 @@ export default function Index() {
                   </svg>
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-start gap-[-0.915px] flex-1">
-                <div className="flex min-w-[405px] flex-col items-start mb-4">
-                  <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+              <div className="flex flex-col justify-center items-start gap-[-0.915px] flex-1 justify-center items-center w-full sm:justify-start sm:items-start sm:w-auto">
+                <div className="flex min-w-[405px] flex-col items-start mb-4 sm:min-w-[405px] min-w-full">
+                  <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px] text-center sm:text-left">
                     Implementation and Ongoing Support
                   </h3>
                 </div>
                 <div className="flex flex-col items-start">
-                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px] text-center sm:text-left">
                     Our team works closely with you to implement the care plan, providing hands-on support and guidance. We continuously assess and adapt our services to meet your evolving needs.
                   </p>
                 </div>
