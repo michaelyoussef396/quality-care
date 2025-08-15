@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-[#121212] h-16 flex items-center relative w-full border-b border-[rgba(87,87,87,0.30)]">
+      <nav className="bg-[#121212] h-16 flex items-center sticky top-0 w-full border-b border-[rgba(87,87,87,0.30)] z-50">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo Section - Always far left */}
