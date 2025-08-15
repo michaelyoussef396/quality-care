@@ -331,7 +331,7 @@ export default function Index() {
             </div>
 
             {/* Right Side - Features */}
-            <div className="flex flex-col justify-center items-center gap-4 flex-1">
+            <div className="flex flex-col justify-center items-center gap-4 flex-1 w-full sm:w-auto">
               {/* Expanded Item - Person-Centered Approach */}
               <div className="flex p-5 flex-col justify-center items-center gap-[19.4px] rounded-lg w-full">
                 <div className="flex h-[42px] justify-between items-center w-full">
@@ -339,7 +339,7 @@ export default function Index() {
                     <span className="text-[#ADADAD] font-inter text-[19px] font-bold leading-7">01</span>
                   </div>
                   <div className="flex flex-col justify-center items-start flex-1 ml-4">
-                    <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+                    <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px] text-center sm:text-left">
                       Person-Centered Approach
                     </h4>
                   </div>
@@ -352,7 +352,7 @@ export default function Index() {
 
                 <div className="flex flex-col justify-center items-start gap-5 w-full lg:justify-center lg:items-start justify-center items-center">
                   <div className="flex flex-col items-start w-full">
-                    <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                    <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px] text-center sm:text-left">
                       We listen to you and craft personalized plans tailored to your needs, preferences, and aspirations.
                     </p>
                   </div>
