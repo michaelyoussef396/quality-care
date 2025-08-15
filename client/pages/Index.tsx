@@ -274,6 +274,155 @@ export default function Index() {
       {/* Divider */}
       <Divider />
 
+      {/* Why Choose Us Section */}
+      <section className="flex justify-center items-center py-20 px-4">
+        <div className="flex flex-col justify-center items-center gap-[60px] max-w-[1080px] w-full">
+          {/* Section Header */}
+          <div className="flex min-w-full px-4 lg:px-[290px] flex-col justify-center items-center gap-[30px]">
+            {/* Why Choose Us Badge */}
+            <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
+              <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                WHY CHOOSE US
+              </div>
+            </div>
+
+            {/* Main Heading */}
+            <div className="flex max-w-[500px] w-full flex-col items-center">
+              <div className="text-center">
+                <h2 className="text-[#247FBF] text-center font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                  <div>Guiding You Through</div>
+                  <div>Personalized Care</div>
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          {/* Section Content */}
+          <div className="flex max-w-[1000px] items-start gap-10 w-full flex-col lg:flex-row">
+            {/* Left Side - Description */}
+            <div className="flex max-w-[500px] flex-col justify-center items-center gap-[19.3px] flex-1">
+              {/* Image */}
+              <div className="w-full max-w-[480px] h-[235px] rounded-lg relative">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/69781f86c6d92bfff5f5ff74a844f1ec700aa6fe?width=960"
+                  alt="Quality Care Team"
+                  className="h-[235px] w-full rounded-lg object-cover"
+                />
+                <div className="absolute inset-0 w-full h-full rounded-lg border-b border-[#4A4A4A]"></div>
+              </div>
+
+              {/* Title and Description */}
+              <div className="flex max-w-[500px] flex-col items-start w-full">
+                <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px] mb-4">
+                  Navigating Life's Most Personal Challenges
+                </h3>
+
+                <div className="flex flex-col justify-center items-start gap-[9.58px] w-full">
+                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                    At Quality Care, we understand that navigating life's challenges can be overwhelming. Our services are designed to provide compassionate and impactful support to individuals and families facing unique circumstances. From personal care to community engagement, our approach centers on empowering independence and promoting well-being.
+                  </p>
+
+                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                    Our team recognizes the emotional and practical complexities of these challenges and approaches each situation with sensitivity, respect, and expertise. We are dedicated to delivering personalized solutions that align with your goals and needs, ensuring you feel supported every step of the way. At Quality Care, your dignity, independence, and aspirations remain our top priorities.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Features */}
+            <div className="flex flex-col justify-center items-center gap-4 flex-1">
+              {/* Expanded Item - Person-Centered Approach */}
+              <div className="flex p-5 flex-col justify-center items-center gap-[19.4px] rounded-lg w-full">
+                <div className="flex h-[42px] justify-between items-center w-full">
+                  <div className="flex items-center gap-4">
+                    <span className="text-[#ADADAD] font-inter text-[19px] font-bold leading-7">01</span>
+                    <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+                      Person-Centered Approach
+                    </h4>
+                  </div>
+                  <div className="flex w-10 h-10 justify-center items-start">
+                    <div className="flex-1 h-full rounded-lg bg-[rgba(227,169,121,0.05)] relative">
+                      <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px]"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-center items-start gap-5 w-full">
+                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                    We listen to you and craft personalized plans tailored to your needs, preferences, and aspirations.
+                  </p>
+
+                  <div className="flex w-full max-w-[440px] justify-center items-center rounded-md">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/7f1c960dab230571ad721d2110c0842f8d33f59b?width=880"
+                      alt="Person-centered care"
+                      className="h-[158px] w-full rounded-md object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div className="w-full h-px rounded-lg border-b border-[#4A4A4A]"></div>
+              </div>
+
+              {/* Collapsed Items */}
+              <div className="flex p-5 justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] w-full">
+                <div className="flex h-[42px] justify-between items-center w-full">
+                  <div className="flex items-center gap-4">
+                    <span className="text-[#4A4A4A] font-inter text-2xl font-bold leading-[42px] tracking-[0.28px]">02</span>
+                    <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+                      Experienced Team
+                    </h4>
+                  </div>
+                  <div className="flex w-10 h-10 justify-center items-start">
+                    <div className="flex-1 h-full rounded-lg bg-[rgba(227,169,121,0.05)] relative">
+                      <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px]"></div>
+                      <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px] rotate-90"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex p-5 justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] w-full">
+                <div className="flex h-[42px] justify-between items-center w-full">
+                  <div className="flex items-center gap-4">
+                    <span className="text-[#4A4A4A] font-inter text-2xl font-bold leading-[42px] tracking-[0.28px]">03</span>
+                    <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+                      Flexibility and Reliability
+                    </h4>
+                  </div>
+                  <div className="flex w-10 h-10 justify-center items-start">
+                    <div className="flex-1 h-full rounded-lg bg-[rgba(227,169,121,0.05)] relative">
+                      <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px]"></div>
+                      <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px] rotate-90"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex p-5 justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] w-full">
+                <div className="flex h-[42px] justify-between items-center w-full">
+                  <div className="flex items-center gap-4">
+                    <span className="text-[#4A4A4A] font-inter text-2xl font-bold leading-[42px] tracking-[0.28px]">04</span>
+                    <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+                      Commitment to Excellence
+                    </h4>
+                  </div>
+                  <div className="flex w-10 h-10 justify-center items-start">
+                    <div className="flex-1 h-full rounded-lg bg-[rgba(227,169,121,0.05)] relative">
+                      <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px]"></div>
+                      <div className="w-5 h-0.5 rounded-[20px] bg-[#247FBF] absolute left-2.5 top-[19px] rotate-90"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <Divider />
+
       {/* CTA Section */}
       <section className="bg-[#247FBF] py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
