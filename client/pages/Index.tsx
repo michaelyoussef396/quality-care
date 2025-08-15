@@ -51,6 +51,9 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Divider */}
+      <Divider />
+
       {/* Services Section */}
       <section className="flex justify-center items-center py-20 px-4">
         <div className="flex flex-col justify-center items-center gap-[60px] max-w-[1080px] w-full">
