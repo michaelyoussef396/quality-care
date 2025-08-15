@@ -660,14 +660,14 @@ export default function Index() {
 
                   {/* Main Heading */}
                   <div className="flex max-w-[320px] flex-col items-start lg:max-w-[320px] max-w-[317px]">
-                    <h2 className="text-white font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                    <h2 className="text-white font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px] text-center sm:text-left">
                       Get in Touch Let Us Support Your Journey to Independence
                     </h2>
                   </div>
 
                   {/* Description */}
-                  <div className="flex min-w-[398px] max-w-[398px] flex-col items-start">
-                    <p className="text-white font-inter text-xl font-bold leading-7">
+                  <div className="flex min-w-[398px] max-w-[398px] flex-col items-start w-full text-center px-0 sm:px-0 sm:text-left sm:w-auto">
+                    <p className="text-white font-inter text-xl font-bold leading-7 text-center sm:text-left">
                       We're here to answer your questions and help you get started with personalized care services. Contact us today, and let's begin working together toward your goals.
                     </p>
                   </div>
