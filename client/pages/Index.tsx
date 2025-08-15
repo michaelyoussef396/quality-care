@@ -348,7 +348,7 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-center items-start gap-5 w-full">
+                <div className="flex flex-col justify-center items-center lg:items-start gap-5 w-full">
                   <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
                     We listen to you and craft personalized plans tailored to your needs, preferences, and aspirations.
                   </p>
