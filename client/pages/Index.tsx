@@ -49,47 +49,218 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-inter">
-            Our Services
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-[#247FBF] rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
+      {/* Services Section */}
+      <section className="flex justify-center items-center py-20 px-4">
+        <div className="flex flex-col justify-center items-center gap-[60px] max-w-[1080px] w-full">
+          {/* Section Header */}
+          <div className="flex flex-col justify-center items-center gap-[30px] w-full">
+            {/* Services Badge */}
+            <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
+              <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                Services
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 font-inter">Compassionate Care</h3>
-              <p className="text-gray-600 font-inter">
-                Dedicated to providing personalized healthcare with empathy and understanding.
-              </p>
             </div>
-            
-            <div className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-[#247FBF] rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+
+            {/* Main Heading */}
+            <div className="flex max-w-[600px] w-full flex-col items-center">
+              <div className="text-center">
+                <h2 className="text-[#121212] text-center font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                  Our Tailored Solutions— <span className="text-[#247FBF]">to Your Unique</span>
+                </h2>
+                <h2 className="text-[#247FBF] text-center font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+                  Needs.
+                </h2>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 font-inter">Expert Team</h3>
-              <p className="text-gray-600 font-inter">
-                Highly qualified healthcare professionals committed to excellence in patient care.
-              </p>
             </div>
-            
-            <div className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-[#247FBF] rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+          </div>
+
+          {/* Services Content */}
+          <div className="flex flex-col justify-center items-center gap-[60px] w-full">
+            {/* Personal Support Services */}
+            <div className="flex flex-col lg:flex-row items-start gap-20 w-full">
+              <div className="flex flex-col justify-center items-start gap-5 flex-1">
+                <div className="flex flex-col justify-center items-start gap-[-0.5px] w-full">
+                  <div className="flex flex-col items-start">
+                    <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+                      Personal Support Services
+                    </h3>
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                      Our Personal Support Services are designed to assist individuals with day-to-day activities and transitions, helping them maintain independence and dignity. From finding the right accommodation to assisting with personal care and transportation, our dedicated team is here to provide reliable and compassionate support every step of the way.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Learn More Link */}
+                <div className="flex justify-center items-center gap-0.5">
+                  <div className="flex flex-col justify-center items-start">
+                    <span className="text-[#121212] font-inter text-base font-semibold leading-6 tracking-[0.16px]">
+                      Learn More
+                    </span>
+                    <div className="w-[89px] h-1 border-b border-white"></div>
+                  </div>
+                  <div className="w-[18px] h-[18px]">
+                    <svg width="18" height="18" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.2087 5.28003V12.5925C15.2087 12.8163 15.1198 13.0309 14.9616 13.1891C14.8034 13.3474 14.5888 13.4363 14.365 13.4363C14.1412 13.4363 13.9266 13.3474 13.7684 13.1891C13.6101 13.0309 13.5212 12.8163 13.5212 12.5925V7.31909L5.96194 14.877C5.80343 15.0355 5.58845 15.1245 5.36429 15.1245C5.14012 15.1245 4.92514 15.0355 4.76663 14.877C4.60812 14.7185 4.51907 14.5035 4.51907 14.2793C4.51907 14.0552 4.60812 13.8402 4.76663 13.6817L12.3259 6.12378H7.05249C6.82871 6.12378 6.6141 6.03488 6.45587 5.87665C6.29763 5.71842 6.20874 5.50381 6.20874 5.28003C6.20874 5.05625 6.29763 4.84164 6.45587 4.68341C6.6141 4.52517 6.82871 4.43628 7.05249 4.43628H14.365C14.5888 4.43628 14.8034 4.52517 14.9616 4.68341C15.1198 4.84164 15.2087 5.05625 15.2087 5.28003Z" fill="#4A4A4A"/>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 font-inter">Modern Technology</h3>
-              <p className="text-gray-600 font-inter">
-                State-of-the-art medical equipment and innovative treatment approaches.
-              </p>
+
+              {/* Personal Support Services List */}
+              <div className="flex flex-col justify-center items-center gap-6 flex-1">
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Accommodation Tenancy
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.26 6.28003V16.03C19.26 16.3284 19.1415 16.6145 18.9305 16.8255C18.7195 17.0365 18.4334 17.155 18.135 17.155C17.8366 17.155 17.5505 17.0365 17.3395 16.8255C17.1285 16.6145 17.01 16.3284 17.01 16.03V8.99878L6.93094 19.076C6.71959 19.2873 6.43295 19.406 6.13406 19.406C5.83518 19.406 5.54853 19.2873 5.33719 19.076C5.12584 18.8646 5.00711 18.578 5.00711 18.2791C5.00711 17.9802 5.12584 17.6936 5.33719 17.4822L15.4162 7.40503H8.385C8.08663 7.40503 7.80048 7.2865 7.5895 7.07552C7.37853 6.86455 7.26 6.5784 7.26 6.28003C7.26 5.98166 7.37853 5.69551 7.5895 5.48453C7.80048 5.27356 8.08663 5.15503 8.385 5.15503H18.135C18.4334 5.15503 18.7195 5.27356 18.9305 5.48453C19.1415 5.69551 19.26 5.98166 19.26 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Assist-Life Stage, Transition
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.65 6.28003V16.03C19.65 16.3284 19.5315 16.6145 19.3205 16.8255C19.1095 17.0365 18.8234 17.155 18.525 17.155C18.2266 17.155 17.9405 17.0365 17.7295 16.8255C17.5185 16.6145 17.4 16.3284 17.4 16.03V8.99878L7.32092 19.076C7.10958 19.2873 6.82293 19.406 6.52405 19.406C6.22516 19.406 5.93852 19.2873 5.72717 19.076C5.51583 18.8646 5.39709 18.578 5.39709 18.2791C5.39709 17.9802 5.51583 17.6936 5.72717 17.4822L15.8062 7.40503H8.77498C8.47662 7.40503 8.19047 7.2865 7.97949 7.07552C7.76851 6.86455 7.64998 6.5784 7.64998 6.28003C7.64998 5.98166 7.76851 5.69551 7.97949 5.48453C8.19047 5.27356 8.47662 5.15503 8.77498 5.15503H18.525C18.8234 5.15503 19.1095 5.27356 19.3205 5.48453C19.5315 5.69551 19.65 5.98166 19.65 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Assist-Personal Activities
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.99 6.28003V16.03C19.99 16.3284 19.8715 16.6145 19.6605 16.8255C19.4495 17.0365 19.1633 17.155 18.865 17.155C18.5666 17.155 18.2805 17.0365 18.0695 16.8255C17.8585 16.6145 17.74 16.3284 17.74 16.03V8.99878L7.66092 19.076C7.44957 19.2873 7.16293 19.406 6.86404 19.406C6.56516 19.406 6.27851 19.2873 6.06717 19.076C5.85582 18.8646 5.73709 18.578 5.73709 18.2791C5.73709 17.9802 5.85582 17.6936 6.06717 17.4822L16.1462 7.40503H9.11498C8.81661 7.40503 8.53046 7.2865 8.31948 7.07552C8.10851 6.86455 7.98998 6.5784 7.98998 6.28003C7.98998 5.98166 8.10851 5.69551 8.31948 5.48453C8.53046 5.27356 8.81661 5.15503 9.11498 5.15503H18.865C19.1633 5.15503 19.4495 5.27356 19.6605 5.48453C19.8715 5.69551 19.99 5.98166 19.99 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Assist-Travel/Transport
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.65 6.28003V16.03C19.65 16.3284 19.5315 16.6145 19.3205 16.8255C19.1095 17.0365 18.8234 17.155 18.525 17.155C18.2266 17.155 17.9405 17.0365 17.7295 16.8255C17.5185 16.6145 17.4 16.3284 17.4 16.03V8.99878L7.32092 19.076C7.10958 19.2873 6.82293 19.406 6.52405 19.406C6.22516 19.406 5.93852 19.2873 5.72717 19.076C5.51583 18.8646 5.39709 18.578 5.39709 18.2791C5.39709 17.9802 5.51583 17.6936 5.72717 17.4822L15.8062 7.40503H8.77498C8.47662 7.40503 8.19047 7.2865 7.97949 7.07552C7.76851 6.86455 7.64998 6.5784 7.64998 6.28003C7.64998 5.98166 7.76851 5.69551 7.97949 5.48453C8.19047 5.27356 8.47662 5.15503 8.77498 5.15503H18.525C18.8234 5.15503 19.1095 5.27356 19.3205 5.48453C19.5315 5.69551 19.65 5.98166 19.65 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Assistance with Tasks – Shared Living
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.01 6.28003V16.03C20.01 16.3284 19.8915 16.6145 19.6805 16.8255C19.4695 17.0365 19.1834 17.155 18.885 17.155C18.5867 17.155 18.3005 17.0365 18.0895 16.8255C17.8786 16.6145 17.76 16.3284 17.76 16.03V8.99878L7.68097 19.076C7.46962 19.2873 7.18298 19.406 6.88409 19.406C6.58521 19.406 6.29856 19.2873 6.08722 19.076C5.87587 18.8646 5.75714 18.578 5.75714 18.2791C5.75714 17.9802 5.87587 17.6936 6.08722 17.4822L16.1663 7.40503H9.13503C8.83666 7.40503 8.55051 7.2865 8.33953 7.07552C8.12856 6.86455 8.01003 6.5784 8.01003 6.28003C8.01003 5.98166 8.12856 5.69551 8.33953 5.48453C8.55051 5.27356 8.83666 5.15503 9.13503 5.15503H18.885C19.1834 5.15503 19.4695 5.27356 19.6805 5.48453C19.8915 5.69551 20.01 5.98166 20.01 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Divider */}
+            <div className="flex h-[17px] flex-col justify-center items-center w-full">
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#4A4A4A] to-transparent"></div>
+            </div>
+
+            {/* Community Engagement Services */}
+            <div className="flex flex-col lg:flex-row items-start gap-20 w-full">
+              <div className="flex flex-col justify-center items-start gap-5 flex-1">
+                <div className="flex flex-col justify-center items-start gap-[-0.5px] w-full">
+                  <div className="flex flex-col items-start">
+                    <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+                      Community Engagement Services
+                    </h3>
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                      Our Community Engagement Services focus on fostering meaningful connections and empowering individuals to actively participate in their communities. Whether it's developing life skills, joining group activities, or accessing adaptive tools for independence, we help clients build confidence and lead fulfilling lives.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Learn More Link */}
+                <div className="flex justify-center items-center gap-0.5">
+                  <div className="flex flex-col justify-center items-start">
+                    <span className="text-[#121212] font-inter text-base font-semibold leading-6 tracking-[0.16px]">
+                      Learn More
+                    </span>
+                    <div className="w-[89px] h-1 border-b border-white"></div>
+                  </div>
+                  <div className="w-[18px] h-[18px]">
+                    <svg width="18" height="18" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.3438 5.28003V12.5925C14.3438 12.8163 14.2549 13.0309 14.0966 13.1891C13.9384 13.3474 13.7238 13.4363 13.5 13.4363C13.2762 13.4363 13.0616 13.3474 12.9034 13.1891C12.7451 13.0309 12.6562 12.8163 12.6562 12.5925V7.31909L5.09695 14.877C4.93844 15.0355 4.72346 15.1245 4.4993 15.1245C4.27513 15.1245 4.06015 15.0355 3.90164 14.877C3.74313 14.7185 3.65408 14.5035 3.65408 14.2793C3.65408 14.0552 3.74313 13.8402 3.90164 13.6817L11.4609 6.12378H6.1875C5.96372 6.12378 5.74911 6.03488 5.59088 5.87665C5.43264 5.71842 5.34375 5.50381 5.34375 5.28003C5.34375 5.05625 5.43264 4.84164 5.59088 4.68341C5.74911 4.52517 5.96372 4.43628 6.1875 4.43628H13.5C13.7238 4.43628 13.9384 4.52517 14.0966 4.68341C14.2549 4.84164 14.3438 5.05625 14.3438 5.28003Z" fill="#4A4A4A"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* Community Engagement Services List */}
+              <div className="flex flex-col justify-center items-center gap-6 flex-1">
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Innovative Community Participation
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.265 6.28003V16.03C19.265 16.3284 19.1465 16.6145 18.9355 16.8255C18.7246 17.0365 18.4384 17.155 18.14 17.155C17.8417 17.155 17.5555 17.0365 17.3445 16.8255C17.1336 16.6145 17.015 16.3284 17.015 16.03V8.99878L6.93597 19.076C6.72463 19.2873 6.43798 19.406 6.1391 19.406C5.84021 19.406 5.55357 19.2873 5.34222 19.076C5.13088 18.8646 5.01215 18.578 5.01215 18.2791C5.01215 17.9802 5.13088 17.6936 5.34222 17.4822L15.4213 7.40503H8.39003C8.09167 7.40503 7.80552 7.2865 7.59454 7.07552C7.38356 6.86455 7.26503 6.5784 7.26503 6.28003C7.26503 5.98166 7.38356 5.69551 7.59454 5.48453C7.80552 5.27356 8.09167 5.15503 8.39003 5.15503H18.14C18.4384 5.15503 18.7246 5.27356 18.9355 5.48453C19.1465 5.69551 19.265 5.98166 19.265 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Development-Life Skills
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.365 6.28003V16.03C19.365 16.3284 19.2465 16.6145 19.0355 16.8255C18.8245 17.0365 18.5383 17.155 18.24 17.155C17.9416 17.155 17.6555 17.0365 17.4445 16.8255C17.2335 16.6145 17.115 16.3284 17.115 16.03V8.99878L7.03592 19.076C6.82457 19.2873 6.53793 19.406 6.23904 19.406C5.94016 19.406 5.65351 19.2873 5.44217 19.076C5.23082 18.8646 5.11209 18.578 5.11209 18.2791C5.11209 17.9802 5.23082 17.6936 5.44217 17.4822L15.5212 7.40503H8.48998C8.19161 7.40503 7.90546 7.2865 7.69448 7.07552C7.48351 6.86455 7.36498 6.5784 7.36498 6.28003C7.36498 5.98166 7.48351 5.69551 7.69448 5.48453C7.90546 5.27356 8.19161 5.15503 8.48998 5.15503H18.24C18.5383 5.15503 18.8245 5.27356 19.0355 5.48453C19.2465 5.69551 19.365 5.98166 19.365 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Assistive Products for Household Tasks
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.32 6.28003V16.03C19.32 16.3284 19.2015 16.6145 18.9905 16.8255C18.7795 17.0365 18.4934 17.155 18.195 17.155C17.8967 17.155 17.6105 17.0365 17.3995 16.8255C17.1886 16.6145 17.07 16.3284 17.07 16.03V8.99878L6.99096 19.076C6.77962 19.2873 6.49298 19.406 6.19409 19.406C5.8952 19.406 5.60856 19.2873 5.39722 19.076C5.18587 18.8646 5.06714 18.578 5.06714 18.2791C5.06714 17.9802 5.18587 17.6936 5.39722 17.4822L15.4763 7.40503H8.44503C8.14666 7.40503 7.86051 7.2865 7.64953 7.07552C7.43855 6.86455 7.32003 6.5784 7.32003 6.28003C7.32003 5.98166 7.43855 5.69551 7.64953 5.48453C7.86051 5.27356 8.14666 5.15503 8.44503 5.15503H18.195C18.4934 5.15503 18.7795 5.27356 18.9905 5.48453C19.2015 5.69551 19.32 5.98166 19.32 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Participate in Community
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.685 6.28003V16.03C19.685 16.3284 19.5665 16.6145 19.3555 16.8255C19.1445 17.0365 18.8584 17.155 18.56 17.155C18.2616 17.155 17.9755 17.0365 17.7645 16.8255C17.5535 16.6145 17.435 16.3284 17.435 16.03V8.99878L7.35592 19.076C7.14458 19.2873 6.85794 19.406 6.55905 19.406C6.26016 19.406 5.97352 19.2873 5.76217 19.076C5.55083 18.8646 5.4321 18.578 5.4321 18.2791C5.4321 17.9802 5.55083 17.6936 5.76217 17.4822L15.8412 7.40503H8.80999C8.51162 7.40503 8.22547 7.2865 8.01449 7.07552C7.80351 6.86455 7.68499 6.5784 7.68499 6.28003C7.68499 5.98166 7.80351 5.69551 8.01449 5.48453C8.22547 5.27356 8.51162 5.15503 8.80999 5.15503H18.56C18.8584 5.15503 19.1445 5.27356 19.3555 5.48453C19.5665 5.69551 19.685 5.98166 19.685 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-1 w-full pb-2 border-b border-[rgba(87,87,87,0.30)]">
+                  <span className="text-[#ADADAD] font-inter text-xl font-bold leading-7 flex-1">
+                    Group/Centre Activities
+                  </span>
+                  <div className="w-6 h-6">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.24 6.28003V16.03C19.24 16.3284 19.1215 16.6145 18.9105 16.8255C18.6995 17.0365 18.4133 17.155 18.115 17.155C17.8166 17.155 17.5305 17.0365 17.3195 16.8255C17.1085 16.6145 16.99 16.3284 16.99 16.03V8.99878L6.91092 19.076C6.69957 19.2873 6.41293 19.406 6.11404 19.406C5.81516 19.406 5.52851 19.2873 5.31717 19.076C5.10582 18.8646 4.98709 18.578 4.98709 18.2791C4.98709 17.9802 5.10582 17.6936 5.31717 17.4822L15.3962 7.40503H8.36498C8.06661 7.40503 7.78046 7.2865 7.56948 7.07552C7.35851 6.86455 7.23998 6.5784 7.23998 6.28003C7.23998 5.98166 7.35851 5.69551 7.56948 5.48453C7.78046 5.27356 8.06661 5.15503 8.36498 5.15503H18.115C18.4133 5.15503 18.6995 5.27356 18.9105 5.48453C19.1215 5.69551 19.24 5.98166 19.24 6.28003Z" fill="#247FBF"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
