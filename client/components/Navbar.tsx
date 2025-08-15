@@ -104,7 +104,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white z-50 relative"
+            className="lg:hidden text-white z-50 relative"
             onClick={toggleMobileMenu}
           >
             {isMobileMenuOpen ? (
