@@ -334,7 +334,7 @@ export default function Index() {
             <div className="flex flex-col justify-center items-center gap-4 flex-1">
               {/* Expanded Item - Person-Centered Approach */}
               <div className="flex p-5 flex-col justify-center items-center gap-[19.4px] rounded-lg w-full">
-                <div className="flex h-[42px] justify-between items-center w-full">
+                <div className="flex h-[42px] justify-center lg:justify-between items-center w-full">
                   <div className="flex items-center gap-4">
                     <span className="text-[#ADADAD] font-inter text-[19px] font-bold leading-7">01</span>
                     <h4 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
