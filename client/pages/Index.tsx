@@ -714,6 +714,9 @@ export default function Index() {
           <div className="w-full h-px rounded-[20px] border-b border-[#4A4A4A]"></div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
