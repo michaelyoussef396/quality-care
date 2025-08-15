@@ -183,12 +183,12 @@ export default function Index() {
               <div className="flex flex-col justify-center items-center lg:items-start gap-5 flex-1">
                 <div className="flex flex-col justify-center items-center lg:items-start gap-[-0.5px] w-full">
                   <div className="flex flex-col items-start">
-                    <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px]">
+                    <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px] text-center sm:text-left">
                       Community Engagement Services
                     </h3>
                   </div>
                   <div className="flex flex-col items-start">
-                    <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                    <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px] text-center sm:text-left">
                       Our Community Engagement Services focus on fostering meaningful connections and empowering individuals to actively participate in their communities. Whether it's developing life skills, joining group activities, or accessing adaptive tools for independence, we help clients build confidence and lead fulfilling lives.
                     </p>
                   </div>
@@ -282,7 +282,7 @@ export default function Index() {
           <div className="flex min-w-full px-4 sm:px-8 lg:px-[290px] flex-col justify-center items-center gap-[30px]">
             {/* Why Choose Us Badge */}
             <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
-              <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
+              <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px] text-center sm:text-center">
                 WHY CHOOSE US
               </div>
             </div>
@@ -291,7 +291,7 @@ export default function Index() {
             <div className="flex max-w-[500px] w-full flex-col items-center">
               <div className="text-center">
                 <h2 className="text-[#247FBF] text-center font-inter text-[28px] font-normal leading-[42px] tracking-[0.28px]">
-                  <div>Guiding You Through</div>
+                  <div className="text-center sm:text-center">Guiding You Through</div>
                   <div>Personalized Care</div>
                 </h2>
               </div>
