@@ -462,7 +462,8 @@ export default function Index() {
           {/* Process Steps */}
           <div className="flex max-w-[501px] flex-col justify-center items-center gap-[60px] relative w-full max-w-[721px] sm:max-w-[501px]">
             {/* Vertical Line */}
-            <div className="absolute left-10 top-[71px] w-0.5 h-[464px] bg-[#4A4A4A] z-0"></div>
+            <div className="absolute left-10 top-[71px] w-0.5 h-[464px] bg-[#4A4A4A] z-0 sm:top-[71px] top-[1px]"></div>
+            <div className="absolute left-10 top-[71px] w-0.5 h-[464px] bg-[#4A4A4A] z-0 sm:top-[71px] top-[250px]"></div>
 
             {/* Step 01 */}
             <div className="flex justify-center items-start gap-4 w-full relative z-10">
@@ -650,7 +651,7 @@ export default function Index() {
             {/* Left Side - Title and Info */}
             <div className="flex flex-col justify-center items-start flex-1 lg:justify-center lg:items-start justify-center items-center">
               <div className="flex flex-col justify-center items-start gap-[6px] w-full lg:flex-col lg:items-start lg:justify-center flex-col items-center justify-center">
-                <div className="flex pr-20 flex-col justify-center items-start gap-[30px] lg:justify-center lg:items-start justify-center items-center">
+                <div className="flex pr-20 flex-col justify-center items-start gap-[30px] lg:justify-center lg:items-start justify-center items-center w-full sm:w-auto">
                   {/* Contact Us Badge */}
                   <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)] lg:text-left text-center lg:mx-0 mx-auto">
                     <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
@@ -666,7 +667,7 @@ export default function Index() {
                   </div>
 
                   {/* Description */}
-                  <div className="flex min-w-[398px] max-w-[398px] flex-col items-start w-full text-center px-0 sm:px-0 sm:text-left sm:w-auto">
+                  <div className="flex min-w-[398px] max-w-[398px] flex-col items-start w-full text-center px-3 sm:px-0 sm:text-left sm:w-auto">
                     <p className="text-white font-inter text-xl font-bold leading-7 text-center sm:text-left">
                       We're here to answer your questions and help you get started with personalized care services. Contact us today, and let's begin working together toward your goals.
                     </p>
