@@ -299,7 +299,7 @@ export default function Index() {
           </div>
 
           {/* Section Content */}
-          <div className="flex max-w-[1000px] items-start gap-10 w-full flex-col lg:flex-row">
+          <div className="flex max-w-[1000px] items-start gap-10 w-full flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
             {/* Left Side - Description */}
             <div className="flex max-w-[500px] flex-col justify-center items-center gap-[19.3px] flex-1">
               {/* Image */}
@@ -350,7 +350,7 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-center items-start gap-5 w-full">
+                <div className="flex flex-col justify-center items-start gap-5 w-full lg:justify-center lg:items-start justify-center items-center">
                   <div className="flex flex-col items-start w-full">
                     <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
                       We listen to you and craft personalized plans tailored to your needs, preferences, and aspirations.
@@ -541,9 +541,9 @@ export default function Index() {
 
       {/* FAQ Section */}
       <section className="flex justify-center items-start py-20 px-4">
-        <div className="flex items-start gap-5 max-w-[1080px] w-full">
+        <div className="flex items-start gap-5 max-w-[1080px] w-full lg:flex-row flex-col lg:items-start items-stretch">
           {/* Left Side - Headers */}
-          <div className="flex w-[400px] max-w-[400px] flex-col justify-center items-start gap-[30px]">
+          <div className="flex w-[400px] max-w-[400px] flex-col justify-center items-start gap-[30px] lg:justify-center lg:items-start lg:w-[400px] lg:max-w-[400px] justify-center items-center w-full max-w-[675px]">
             {/* FAQ Badge */}
             <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
               <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
@@ -552,18 +552,13 @@ export default function Index() {
             </div>
 
             {/* Main Heading */}
-            <div className="flex min-w-[300px] max-w-[300px] flex-col items-start">
-              <h2 className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
-                Insights & Clarifications
-              </h2>
-              <h2 className="text-[#ADADAD] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
-                — Frequently Asked Questions.
-              </h2>
+            <div className="min-w-[300px] max-w-[300px] text-[#247FBF] font-inter text-[28px] font-normal leading-[42px] tracking-[0.28px] lg:text-left text-center">
+              Insights & Clarifications
             </div>
           </div>
 
           {/* Right Side - Q&A */}
-          <div className="flex w-[660px] flex-col items-start gap-2 rounded-xl">
+          <div className="flex w-[660px] flex-col items-start gap-2 rounded-xl lg:w-[660px] w-full">
             {/* Expanded Question 1 */}
             <div className="flex p-5 flex-col items-start rounded-xl bg-[#247FBF] w-full">
               <div className="flex justify-center items-start gap-2.5 w-full">
@@ -651,22 +646,22 @@ export default function Index() {
       {/* Contact CTA Section */}
       <section className="flex justify-center items-center bg-[#4A4A4A] w-full">
         <div className="flex flex-col items-center max-w-[1080px] w-full min-h-[471px]">
-          <div className="flex p-10 items-end gap-10 rounded-[20px] w-full">
+          <div className="flex p-10 items-end gap-10 rounded-[20px] w-full lg:flex-row flex-col lg:items-end items-stretch">
             {/* Left Side - Title and Info */}
-            <div className="flex flex-col justify-center items-start flex-1">
-              <div className="flex flex-col justify-center items-start gap-[6px] w-full">
-                <div className="flex pr-20 flex-col justify-center items-start gap-[30px]">
+            <div className="flex flex-col justify-center items-start flex-1 lg:justify-center lg:items-start justify-center items-center">
+              <div className="flex flex-col justify-center items-start gap-[6px] w-full lg:flex-col lg:items-start lg:justify-center flex-col items-center justify-center">
+                <div className="flex pr-20 flex-col justify-center items-start gap-[30px] lg:justify-center lg:items-start justify-center items-center">
                   {/* Contact Us Badge */}
-                  <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
+                  <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)] lg:text-left text-center lg:mx-0 mx-auto">
                     <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
                       Contact Us
                     </div>
                   </div>
 
                   {/* Main Heading */}
-                  <div className="flex max-w-[320px] flex-col items-start">
+                  <div className="flex max-w-[320px] flex-col items-start lg:max-w-[320px] max-w-[317px]">
                     <h2 className="text-white font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
-                      Get in Touch— Let Us Support Your Journey to Independence
+                      Get in Touch Let Us Support Your Journey to Independence
                     </h2>
                   </div>
 
