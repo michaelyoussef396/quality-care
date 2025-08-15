@@ -268,6 +268,9 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Divider */}
+      <Divider />
+
       {/* CTA Section */}
       <section className="bg-[#247FBF] py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
