@@ -38,7 +38,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center gap-7">
+          <div className="hidden lg:flex items-center gap-7">
             <Link
               to="/"
               className={`text-base font-medium leading-8 tracking-[-0.16px] font-inter ${
