@@ -313,17 +313,17 @@ export default function Index() {
               </div>
 
               {/* Title and Description */}
-              <div className="flex max-w-[500px] flex-col items-start w-full">
-                <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px] mb-4">
+              <div className="flex max-w-[500px] flex-col items-start w-full justify-center items-center sm:justify-start sm:items-start">
+                <h3 className="text-[#247FBF] font-inter text-2xl font-bold leading-[33.6px] tracking-[0.24px] mb-4 text-center sm:text-left">
                   Navigating Life's Most Personal Challenges
                 </h3>
 
                 <div className="flex flex-col justify-center items-start gap-[9.58px] w-full">
-                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px] text-center sm:text-left">
                     At Quality Care, we understand that navigating life's challenges can be overwhelming. Our services are designed to provide compassionate and impactful support to individuals and families facing unique circumstances. From personal care to community engagement, our approach centers on empowering independence and promoting well-being.
                   </p>
 
-                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px]">
+                  <p className="text-[#121212] font-inter text-base font-normal leading-[24.8px] tracking-[0.32px] text-center sm:text-left">
                     Our team recognizes the emotional and practical complexities of these challenges and approaches each situation with sensitivity, respect, and expertise. We are dedicated to delivering personalized solutions that align with your goals and needs, ensuring you feel supported every step of the way. At Quality Care, your dignity, independence, and aspirations remain our top priorities.
                   </p>
                 </div>
