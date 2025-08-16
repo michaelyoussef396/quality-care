@@ -140,6 +140,73 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Divider */}
+      <Divider />
+
+      {/* Our Mission Section */}
+      <section className="flex justify-center items-start py-12 sm:py-16 lg:py-20 px-4">
+        <div className="flex justify-center items-start gap-6 sm:gap-8 lg:gap-10 max-w-[1080px] w-full flex-col lg:flex-row">
+          {/* Left Side - Content */}
+          <div className="flex w-full flex-col justify-center items-start gap-6 sm:gap-8 lg:gap-[60px] flex-1">
+            {/* Title and Button with Divider */}
+            <div className="flex w-full flex-col justify-center items-start gap-2 sm:gap-4 lg:gap-[10px]">
+              {/* Title and Button */}
+              <div className="flex flex-col justify-center items-start gap-6 sm:gap-8 lg:gap-[30px] w-full">
+                {/* Our Mission Badge */}
+                <div className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)] w-full sm:w-auto">
+                  <div className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px] text-center sm:text-left">
+                    Our Mission
+                  </div>
+                </div>
+
+                {/* Section Heading */}
+                <div className="flex w-full max-w-[500px] flex-col items-start">
+                  <h2 className="text-[#247FBF] font-inter text-lg sm:text-xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
+                    Delivering Empowerment Through Compassionate Care
+                  </h2>
+                </div>
+              </div>
+
+              {/* Horizontal Divider */}
+              <div className="h-px w-full bg-[rgba(87,87,87,0.30)]"></div>
+            </div>
+
+            {/* Description */}
+            <div className="flex w-full justify-center items-center">
+              <div className="flex w-full flex-col items-start gap-6 sm:gap-8 lg:gap-[39px]">
+                <div className="w-full">
+                  <p className="text-[rgba(18,18,18,0.72)] font-inter text-base sm:text-lg font-bold leading-[1.4]">
+                    At Quality Care, our mission is to transform lives by providing exceptional support that empowers individuals to live with independence, dignity, and confidence. We are dedicated to breaking barriers and creating opportunities for people with disabilities, ensuring they have the tools and resources needed to thrive in every aspect of their lives.
+                  </p>
+                </div>
+
+                <div className="w-full">
+                  <p className="text-[rgba(18,18,18,0.72)] font-inter text-base sm:text-lg font-bold leading-[1.4]">
+                    We aim to provide not just services but a lasting impact—cultivating meaningful relationships with our clients and the community. Through a person-centered approach, we listen, understand, and respond to the unique needs and aspirations of each individual
+                  </p>
+                </div>
+
+                {/* Bottom Border */}
+                <div className="w-full h-px border-b border-[rgba(87,87,87,0.30)]"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side - Image */}
+          <div className="flex w-full lg:w-[449px] flex-col justify-center items-center rounded-lg flex-1">
+            <div className="w-full h-[400px] sm:h-[500px] lg:w-[449px] lg:h-[542px] rounded-lg overflow-hidden relative">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/20bb09de5fed6309adec03347fe8b457641195a4?width=898"
+                alt="Person in wheelchair having a conversation showing independence and empowerment"
+                className="w-full h-full object-cover rounded-lg"
+              />
+              {/* Border Overlay */}
+              <div className="absolute inset-0 w-full h-full rounded-lg border border-[rgba(119,119,119,0.47)]"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
