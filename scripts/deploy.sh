@@ -65,7 +65,12 @@ check_prerequisites() {
 run_tests() {
     log_info "Running tests..."
     
-    npm test
+    if command -v pnpm &> /dev/null; then
+        pnpm run test
+    else
+        npm test
+    fi
+    
     if [ $? -ne 0 ]; then
         log_error "Tests failed. Deployment aborted."
         exit 1
@@ -78,7 +83,12 @@ run_tests() {
 run_typecheck() {
     log_info "Running TypeScript type checking..."
     
-    npm run typecheck
+    if command -v pnpm &> /dev/null; then
+        pnpm run typecheck
+    else
+        npm run typecheck
+    fi
+    
     if [ $? -ne 0 ]; then
         log_error "Type checking failed. Deployment aborted."
         exit 1
@@ -109,9 +119,25 @@ build_app() {
     export NODE_ENV=production
     
     # Build the application
-    npm run build
+    if command -v pnpm &> /dev/null; then
+        pnpm run build
+    else
+        npm run build
+    fi
+    
     if [ $? -ne 0 ]; then
         log_error "Build failed. Deployment aborted."
+        exit 1
+    fi
+    
+    # Verify build output
+    if [ ! -d "$BUILD_DIR/spa" ]; then
+        log_error "Build output directory not found. Build may have failed."
+        exit 1
+    fi
+    
+    if [ ! -f "$BUILD_DIR/spa/index.html" ]; then
+        log_error "index.html not found in build output. Build may have failed."
         exit 1
     fi
     
@@ -122,12 +148,29 @@ build_app() {
 analyze_bundle() {
     log_info "Analyzing bundle size..."
     
-    if [ -f "dist/stats.html" ]; then
-        log_info "Bundle analysis report generated: dist/stats.html"
-        
+    if [ -d "$BUILD_DIR/spa" ]; then
         # Check bundle size (approximate)
-        bundle_size=$(du -sh dist | cut -f1)
+        bundle_size=$(du -sh $BUILD_DIR/spa | cut -f1)
         log_info "Total build size: $bundle_size"
+        
+        # Analyze individual file sizes
+        log_info "Large files in build:"
+        find $BUILD_DIR/spa -type f -size +100k -exec ls -lh {} \; | head -10
+        
+        # Check for common optimization issues
+        js_files=$(find $BUILD_DIR/spa -name "*.js" | wc -l)
+        css_files=$(find $BUILD_DIR/spa -name "*.css" | wc -l)
+        img_files=$(find $BUILD_DIR/spa -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" -o -name "*.webp" | wc -l)
+        
+        log_info "File counts - JS: $js_files, CSS: $css_files, Images: $img_files"
+        
+        # Warn if bundle is too large
+        size_mb=$(du -sm $BUILD_DIR/spa | cut -f1)
+        if [ $size_mb -gt 10 ]; then
+            log_warning "Build size is ${size_mb}MB, consider optimization"
+        fi
+    else
+        log_warning "Build directory not found for analysis"
     fi
 }
 
@@ -264,6 +307,54 @@ cleanup_backups() {
     log_success "Backup cleanup completed"
 }
 
+# Deploy to Netlify
+deploy_netlify() {
+    log_info "Deploying to Netlify..."
+    
+    if [ -z "$NETLIFY_AUTH_TOKEN" ]; then
+        log_warning "NETLIFY_AUTH_TOKEN not set, skipping Netlify deployment"
+        return 0
+    fi
+    
+    if command -v netlify &> /dev/null; then
+        netlify deploy --prod --dir=dist/spa --auth=$NETLIFY_AUTH_TOKEN
+        log_success "Deployed to Netlify"
+    else
+        log_warning "Netlify CLI not installed, skipping deployment"
+    fi
+}
+
+# Deploy to Vercel
+deploy_vercel() {
+    log_info "Deploying to Vercel..."
+    
+    if [ -z "$VERCEL_TOKEN" ]; then
+        log_warning "VERCEL_TOKEN not set, skipping Vercel deployment"
+        return 0
+    fi
+    
+    if command -v vercel &> /dev/null; then
+        vercel --prod --token=$VERCEL_TOKEN --yes
+        log_success "Deployed to Vercel"
+    else
+        log_warning "Vercel CLI not installed, skipping deployment"
+    fi
+}
+
+# Generate static deployment package
+generate_static_package() {
+    log_info "Generating static deployment package..."
+    
+    PACKAGE_NAME="quality-care-static-${DEPLOY_TIMESTAMP}.tar.gz"
+    
+    cd $BUILD_DIR/spa
+    tar -czf "../../$PACKAGE_NAME" .
+    cd ../..
+    
+    log_success "Static package created: $PACKAGE_NAME"
+    log_info "Upload this package to any static hosting provider"
+}
+
 # Send notification (placeholder)
 send_notification() {
     local status=$1
@@ -279,9 +370,11 @@ send_notification() {
     echo "Timestamp: $(date)"
     
     # Example Slack webhook (uncomment and configure)
-    # curl -X POST -H 'Content-type: application/json' \
-    #     --data "{\"text\":\"🚀 Quality Care Deployment: $status - $message\"}" \
-    #     YOUR_SLACK_WEBHOOK_URL
+    # if [ -n "$SLACK_WEBHOOK_URL" ]; then
+    #     curl -X POST -H 'Content-type: application/json' \
+    #         --data "{\"text\":\"🚀 Quality Care Deployment: $status - $message\"}" \
+    #         $SLACK_WEBHOOK_URL
+    # fi
 }
 
 # Main deployment process
@@ -332,10 +425,39 @@ case "${1:-}" in
         run_tests
         ;;
     "build")
+        check_prerequisites
+        run_tests
+        run_typecheck
         build_app
+        analyze_bundle
         ;;
     "docker")
+        check_prerequisites
+        run_tests
+        run_typecheck
+        build_app
         build_docker_image
+        ;;
+    "netlify")
+        check_prerequisites
+        run_tests
+        run_typecheck
+        build_app
+        deploy_netlify
+        ;;
+    "vercel")
+        check_prerequisites
+        run_tests
+        run_typecheck
+        build_app
+        deploy_vercel
+        ;;
+    "static")
+        check_prerequisites
+        run_tests
+        run_typecheck
+        build_app
+        generate_static_package
         ;;
     "rollback")
         rollback

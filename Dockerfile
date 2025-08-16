@@ -1,5 +1,5 @@
 # Production Dockerfile for Quality Care NDIS Website
-# TASK-026: Production build configuration
+# Optimized for React + Vite SPA deployment
 
 # Build stage
 FROM node:18-alpine AS builder
@@ -7,55 +7,66 @@ FROM node:18-alpine AS builder
 # Set working directory
 WORKDIR /app
 
+# Add necessary packages for building
+RUN apk add --no-cache python3 make g++
+
 # Copy package files
 COPY package*.json ./
+COPY pnpm-lock.yaml* ./
+
+# Install pnpm globally
+RUN npm install -g pnpm
 
 # Install dependencies
-RUN npm ci --only=production
+RUN pnpm install --frozen-lockfile
 
 # Copy source code
 COPY . .
 
+# Set production environment
+ENV NODE_ENV=production
+
 # Build the application
-RUN npm run build
+RUN pnpm run build
 
 # Production stage
 FROM nginx:alpine AS production
 
-# Install Node.js for server-side rendering (if needed)
-RUN apk add --no-cache nodejs npm
+# Install curl for health checks
+RUN apk add --no-cache curl
 
 # Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Copy built application
-COPY --from=builder /app/dist /usr/share/nginx/html
+# Copy built SPA from builder stage
+COPY --from=builder /app/dist/spa /usr/share/nginx/html
 
-# Copy server files (if using SSR)
-COPY --from=builder /app/server /app/server
-COPY --from=builder /app/package*.json /app/
+# Copy static assets to correct location
+COPY --from=builder /app/public /usr/share/nginx/html
 
-# Install production dependencies for server
-WORKDIR /app
-RUN npm ci --only=production
+# Create nginx user and set permissions
+RUN addgroup -g 101 -S nginx || true
+RUN adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx || true
 
-# Create non-root user
-RUN addgroup -g 1001 -S nodejs
-RUN adduser -S nextjs -u 1001
+# Set proper permissions
+RUN chown -R nginx:nginx /usr/share/nginx/html
+RUN chown -R nginx:nginx /var/cache/nginx
+RUN chown -R nginx:nginx /var/log/nginx
+RUN chown -R nginx:nginx /etc/nginx/conf.d
 
-# Change ownership
-RUN chown -R nextjs:nodejs /usr/share/nginx/html
-RUN chown -R nextjs:nodejs /app
+# Make nginx directories
+RUN touch /var/run/nginx.pid
+RUN chown -R nginx:nginx /var/run/nginx.pid
 
 # Switch to non-root user
-USER nextjs
+USER nginx
 
 # Expose port
 EXPOSE 80
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost/ || exit 1
+  CMD curl -f http://localhost/health || exit 1
 
 # Start nginx
 CMD ["nginx", "-g", "daemon off;"]
