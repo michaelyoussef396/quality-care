@@ -14,6 +14,7 @@ import AssistLifeStageTransition from "./pages/AssistLifeStageTransition";
 import AssistPersonalActivities from "./pages/AssistPersonalActivities";
 import AssistTravelTransport from "./pages/AssistTravelTransport";
 import SharedLiving from "./pages/SharedLiving";
+import CommunityParticipation from "./pages/CommunityParticipation";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
