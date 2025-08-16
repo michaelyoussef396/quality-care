@@ -17,6 +17,7 @@ import SharedLiving from "./pages/SharedLiving";
 import CommunityParticipation from "./pages/CommunityParticipation";
 import DevelopmentLifeSkills from "./pages/DevelopmentLifeSkills";
 import AssistiveProducts from "./pages/AssistiveProducts";
+import ParticipateInCommunity from "./pages/ParticipateInCommunity";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
@@ -42,6 +43,7 @@ const App = () => (
             <Route path="/CommunityParticipation" element={<CommunityParticipation />} />
             <Route path="/DevelopmentLifeSkills" element={<DevelopmentLifeSkills />} />
             <Route path="/AssistiveProducts" element={<AssistiveProducts />} />
+            <Route path="/ParticipateInCommunity" element={<ParticipateInCommunity />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
