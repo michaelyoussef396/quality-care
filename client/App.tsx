@@ -13,6 +13,7 @@ import AccommodationTenancy from "./pages/AccommodationTenancy";
 import AssistLifeStageTransition from "./pages/AssistLifeStageTransition";
 import AssistPersonalActivities from "./pages/AssistPersonalActivities";
 import AssistTravelTransport from "./pages/AssistTravelTransport";
+import SharedLiving from "./pages/SharedLiving";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
