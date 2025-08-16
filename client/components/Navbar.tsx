@@ -82,7 +82,7 @@ export default function Navbar() {
                       <ul className="space-y-2">
                         <li><Link to="/CommunityParticipation" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Community Participation</Link></li>
                         <li><Link to="/DevelopmentLifeSkills" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Development-Life Skills</Link></li>
-                        <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assistive Products</a></li>
+                        <li><Link to="/AssistiveProducts" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assistive Products</Link></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Participate in Community</a></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Group/Centre Activities</a></li>
                       </ul>
@@ -201,7 +201,7 @@ export default function Navbar() {
                         <div className="space-y-1">
                           <Link to="/CommunityParticipation" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Community Participation</Link>
                           <Link to="/DevelopmentLifeSkills" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Development-Life Skills</Link>
-                          <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Assistive Products</a>
+                          <Link to="/AssistiveProducts" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Assistive Products</Link>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Participate in Community</a>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Group/Centre Activities</a>
                         </div>
