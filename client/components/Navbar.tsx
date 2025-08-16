@@ -74,7 +74,7 @@ export default function Navbar() {
                         <li><Link to="/AssistLifeStageTransition" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assist-Life Stage, Transition</Link></li>
                         <li><Link to="/AssistPersonalActivities" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assist-Personal Activities</Link></li>
                         <li><Link to="/AssistTravelTransport" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assist-Travel/Transport</Link></li>
-                        <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Shared Living</a></li>
+                        <li><Link to="/SharedLiving" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Shared Living</Link></li>
                       </ul>
                     </div>
                     <div className="pt-4 border-t border-gray-700">
@@ -192,7 +192,7 @@ export default function Navbar() {
                           <Link to="/AssistLifeStageTransition" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Assist-Life Stage, Transition</Link>
                           <Link to="/AssistPersonalActivities" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Assist-Personal Activities</Link>
                           <Link to="/AssistTravelTransport" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Assist-Travel/Transport</Link>
-                          <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Shared Living</a>
+                          <Link to="/SharedLiving" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Shared Living</Link>
                         </div>
                       </div>
 
