@@ -18,6 +18,7 @@ import CommunityParticipation from "./pages/CommunityParticipation";
 import DevelopmentLifeSkills from "./pages/DevelopmentLifeSkills";
 import AssistiveProducts from "./pages/AssistiveProducts";
 import ParticipateInCommunity from "./pages/ParticipateInCommunity";
+import GroupCentreActivities from "./pages/GroupCentreActivities";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/DevelopmentLifeSkills" element={<DevelopmentLifeSkills />} />
             <Route path="/AssistiveProducts" element={<AssistiveProducts />} />
             <Route path="/ParticipateInCommunity" element={<ParticipateInCommunity />} />
+            <Route path="/GroupCentreActivities" element={<GroupCentreActivities />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
