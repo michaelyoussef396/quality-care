@@ -25,6 +25,225 @@ export default function AssistTravelTransport() {
         </div>
       </section>
 
+      {/* Article Section */}
+      <section className="flex justify-center items-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8">
+        <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10 max-w-[1080px] w-full">
+          {/* Top Part */}
+          <div className="flex flex-col justify-center items-start gap-4 sm:gap-5 lg:gap-[20px] w-full">
+            {/* Divider */}
+            <div className="flex h-4 lg:h-[17px] flex-col justify-center items-center w-full">
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#4A4A4A] to-[#121212]"></div>
+            </div>
+
+            {/* Navigation */}
+            <div className="flex items-center gap-2">
+              <div className="flex justify-center items-center gap-0.5">
+                <div className="flex w-[18px] h-[18px] flex-col items-start">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.8186 14.5569C14.7402 14.6356 14.6471 14.698 14.5445 14.7406C14.442 14.7832 14.332 14.8051 14.221 14.8051C14.1099 14.8051 14 14.7832 13.8974 14.7406C13.7949 14.698 13.7017 14.6356 13.6233 14.5569L6.06543 6.99902V12.2725C6.06543 12.4962 5.97653 12.7108 5.8183 12.8691C5.66007 13.0273 5.44546 13.1162 5.22168 13.1162C4.9979 13.1162 4.78329 13.0273 4.62506 12.8691C4.46682 12.7108 4.37793 12.4962 4.37793 12.2725V4.95996C4.37793 4.73618 4.46682 4.52157 4.62506 4.36334C4.78329 4.20511 4.9979 4.11621 5.22168 4.11621H12.5342C12.758 4.11621 12.9726 4.20511 13.1308 4.36334C13.289 4.52157 13.3779 4.73618 13.3779 4.95996C13.3779 5.18374 13.289 5.39835 13.1308 5.55658C12.9726 5.71482 12.758 5.80371 12.5342 5.80371H7.26074L14.8186 13.363C14.8971 13.4414 14.9593 13.5344 15.0018 13.6369C15.0442 13.7393 15.0661 13.8491 15.0661 13.96C15.0661 14.0708 15.0442 14.1806 15.0018 14.2831C14.9593 14.3855 14.8971 14.4786 14.8186 14.5569Z" fill="#4A4A4A"/>
+                  </svg>
+                </div>
+                <div className="flex flex-col justify-center items-start rounded-[74px]">
+                  <div className="text-[#121212] font-inter text-base font-bold leading-6 tracking-[0.16px]">
+                    Home
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Title Description */}
+            <div className="flex w-full flex-col justify-center items-start gap-1">
+              <div className="flex w-full max-w-[700px] flex-col items-start">
+                <h2 className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-normal leading-[1.5] tracking-[0.28px] mb-4">
+                  Enabling Your Journey with Comfort and Confidence
+                </h2>
+              </div>
+              <div className="flex w-full max-w-[800px] flex-col items-start">
+                <p className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                  Access to reliable transportation is essential for independence and participation in daily activities. At
+                  Quality Care, our Assist-Travel/Transport service is designed to help you get where you need to go
+                  safely and comfortably. Whether it's medical appointments, work, or social outings, we're here to
+                  ensure you have the support you need to stay connected to the world around you.
+                </p>
+              </div>
+            </div>
+
+            {/* Divider */}
+            <div className="flex h-4 lg:h-[17px] flex-col justify-center items-center w-full">
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#4A4A4A] to-transparent"></div>
+            </div>
+          </div>
+
+          {/* Main Content with Image */}
+          <div className="flex flex-col justify-center items-center gap-6 sm:gap-7 lg:gap-[30px] w-full rounded-2xl bg-white/5 p-4 sm:p-6 lg:p-7">
+            {/* Image */}
+            <div className="w-full max-w-[1024px] h-[300px] sm:h-[400px] lg:h-[558px] rounded-lg overflow-hidden border border-gray-300/50">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/636e6db11892caf034be6286bc27f1a5d09721a4?width=2048"
+                alt="Accessible transportation with wheelchair user and support worker"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Content Sections */}
+            <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+              {/* Our Approach Section */}
+              <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+                <div className="flex w-full max-w-[1024px] flex-col items-start">
+                  <h3 className="text-[#247FBF] font-inter text-lg sm:text-xl lg:text-2xl font-normal leading-[1.4] tracking-[0.24px] mb-6">
+                    Our Approach to Travel and Transport Assistance
+                  </h3>
+                </div>
+
+                <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+                  <div className="flex w-full max-w-[1024px] flex-col justify-center items-start gap-1">
+                    <div className="flex flex-col items-start w-full space-y-4 sm:space-y-5 lg:space-y-6">
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                          <span className="font-bold">Personalized Travel Planning</span><br />
+                          We work with you to develop a transportation plan that aligns with your daily routines, needs, and goals, ensuring that you have access to the places that matter most.
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Safe and Reliable Transport</span><br />
+                          Our team ensures that your journeys are safe and stress-free, whether through private transport options or support navigating public transportation systems.
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Building Independence</span><br />
+                          For individuals looking to build confidence in travel, we provide guidance and training to help you navigate transportation systems independently.
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Flexibility and Accessibility</span><br />
+                          Our services are designed to accommodate your schedule, mobility requirements, and any additional needs to ensure a seamless travel experience.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Horizontal Divider */}
+                  <div className="h-px w-full bg-gray-400/30"></div>
+
+                  {/* Why Choose Us Section */}
+                  <div className="flex flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-[10px] w-full">
+                    <div className="flex w-full max-w-[1024px] flex-col items-start">
+                      <h3 className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
+                        Why Choose Us for Travel and Transport Assistance?
+                      </h3>
+                    </div>
+
+                    <div className="flex flex-col justify-center items-center w-full">
+                      <div className="flex flex-col items-start w-full">
+                        <div className="flex flex-col items-start w-full space-y-2">
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Safe and dependable transportation to essential destinations.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Support tailored to your mobility and accessibility needs.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Guidance to build confidence in independent travel.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Common Travel Support Section */}
+                  <div className="flex flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-[10px] w-full">
+                    <div className="flex w-full max-w-[1024px] flex-col items-start">
+                      <h3 className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
+                        Common Travel Support We Provide:
+                      </h3>
+                    </div>
+
+                    <div className="flex flex-col justify-center items-center w-full">
+                      <div className="flex flex-col items-start w-full">
+                        <div className="flex flex-col items-start w-full space-y-2">
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Transport to medical appointments and therapy sessions.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Assistance traveling to work, school, or community events.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Support for running errands or attending social outings.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Guidance and training to navigate public transport systems.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact CTA Section */}
       <section className="flex justify-center items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-[240px]">
         <div className="flex h-auto lg:h-[278px] w-full justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] py-8 sm:py-12 lg:py-8">
