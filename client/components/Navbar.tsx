@@ -81,7 +81,7 @@ export default function Navbar() {
                       <h3 className="text-[#247FBF] text-sm font-semibold mb-3 uppercase tracking-wider font-inter">Community Engagement</h3>
                       <ul className="space-y-2">
                         <li><Link to="/CommunityParticipation" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Community Participation</Link></li>
-                        <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Development-Life Skills</a></li>
+                        <li><Link to="/DevelopmentLifeSkills" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Development-Life Skills</Link></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assistive Products</a></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Participate in Community</a></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Group/Centre Activities</a></li>
@@ -200,7 +200,7 @@ export default function Navbar() {
                         <h3 className="text-[#247FBF] text-sm font-semibold mb-2 px-3 uppercase tracking-wider font-inter">Community Engagement</h3>
                         <div className="space-y-1">
                           <Link to="/CommunityParticipation" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Community Participation</Link>
-                          <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Development-Life Skills</a>
+                          <Link to="/DevelopmentLifeSkills" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Development-Life Skills</Link>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Assistive Products</a>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Participate in Community</a>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Group/Centre Activities</a>
