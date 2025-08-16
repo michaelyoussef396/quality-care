@@ -39,8 +39,17 @@ export default function AssistLifeStageTransition() {
             <div className="flex items-center gap-2">
               <div className="flex justify-center items-center gap-0.5">
                 <div className="flex w-[18px] h-[18px] flex-col items-start">
-                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.1756 14.3694C14.0972 14.4481 14.004 14.5105 13.9015 14.5531C13.7989 14.5957 13.689 14.6176 13.5779 14.6176C13.4669 14.6176 13.3569 14.5957 13.2543 14.5531C13.1518 14.5105 13.0586 14.4481 12.9803 14.3694L5.42236 6.81152V12.085C5.42236 12.3087 5.33347 12.5233 5.17523 12.6816C5.017 12.8398 4.80239 12.9287 4.57861 12.9287C4.35484 12.9287 4.14023 12.8398 3.98199 12.6816C3.82376 12.5233 3.73486 12.3087 3.73486 12.085V4.77246C3.73486 4.54868 3.82376 4.33407 3.98199 4.17584C4.14023 4.01761 4.35484 3.92871 4.57861 3.92871H11.8911C12.1149 3.92871 12.3295 4.01761 12.4877 4.17584C12.646 4.33407 12.7349 4.54868 12.7349 4.77246C12.7349 4.99624 12.646 5.21085 12.4877 5.36908C12.3295 5.52732 12.1149 5.61621 11.8911 5.61621H6.61768L14.1756 13.1755C14.254 13.2539 14.3162 13.3469 14.3587 13.4494C14.4012 13.5518 14.423 13.6616 14.423 13.7725C14.423 13.8833 14.4012 13.9931 14.3587 14.0956C14.3162 14.198 14.254 14.2911 14.1756 14.3694Z" fill="#4A4A4A"/>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.1756 14.3694C14.0972 14.4481 14.004 14.5105 13.9015 14.5531C13.7989 14.5957 13.689 14.6176 13.5779 14.6176C13.4669 14.6176 13.3569 14.5957 13.2543 14.5531C13.1518 14.5105 13.0586 14.4481 12.9803 14.3694L5.42236 6.81152V12.085C5.42236 12.3087 5.33347 12.5233 5.17523 12.6816C5.017 12.8398 4.80239 12.9287 4.57861 12.9287C4.35484 12.9287 4.14023 12.8398 3.98199 12.6816C3.82376 12.5233 3.73486 12.3087 3.73486 12.085V4.77246C3.73486 4.54868 3.82376 4.33407 3.98199 4.17584C4.14023 4.01761 4.35484 3.92871 4.57861 3.92871H11.8911C12.1149 3.92871 12.3295 4.01761 12.4877 4.17584C12.646 4.33407 12.7349 4.54868 12.7349 4.77246C12.7349 4.99624 12.646 5.21085 12.4877 5.36908C12.3295 5.52732 12.1149 5.61621 11.8911 5.61621H6.61768L14.1756 13.1755C14.254 13.2539 14.3162 13.3469 14.3587 13.4494C14.4012 13.5518 14.423 13.6616 14.423 13.7725C14.423 13.8833 14.4012 13.9931 14.3587 14.0956C14.3162 14.198 14.254 14.2911 14.1756 14.3694Z"
+                      fill="#4A4A4A"
+                    />
                   </svg>
                 </div>
                 <div className="flex flex-col justify-center items-start rounded-[74px]">
@@ -60,11 +69,14 @@ export default function AssistLifeStageTransition() {
               </div>
               <div className="flex w-full max-w-[800px] flex-col items-start">
                 <p className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                  Life is full of transitions, and navigating significant changes can feel overwhelming. At Quality Care,
-                  our Assist-Life Stage, Transition service is designed to provide the guidance, resources, and support
-                  you need to move through these critical moments with confidence and ease. Whether transitioning
-                  from school to work, relocating to a new living situation, or adjusting to other life changes, we are
-                  here to help you every step of the way.
+                  Life is full of transitions, and navigating significant
+                  changes can feel overwhelming. At Quality Care, our
+                  Assist-Life Stage, Transition service is designed to provide
+                  the guidance, resources, and support you need to move through
+                  these critical moments with confidence and ease. Whether
+                  transitioning from school to work, relocating to a new living
+                  situation, or adjusting to other life changes, we are here to
+                  help you every step of the way.
                 </p>
               </div>
             </div>
@@ -101,29 +113,47 @@ export default function AssistLifeStageTransition() {
                     <div className="flex flex-col items-start w-full space-y-4 sm:space-y-5 lg:space-y-6">
                       <div className="flex flex-col items-start w-full">
                         <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
-                          <span className="font-bold">Planning for Change</span><br />
-                          We work with you to create a personalized plan that outlines your goals and the steps needed to achieve them. From career development to independent living skills, we ensure you're prepared for every aspect of the transition.
+                          <span className="font-bold">Planning for Change</span>
+                          <br />
+                          We work with you to create a personalized plan that
+                          outlines your goals and the steps needed to achieve
+                          them. From career development to independent living
+                          skills, we ensure you're prepared for every aspect of
+                          the transition.
                         </div>
                       </div>
 
                       <div className="flex flex-col items-start w-full">
                         <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
-                          <span className="font-bold">Skill Development</span><br />
-                          Our team helps you build the essential skills needed to navigate new stages of life, such as time management, budgeting, communication, and problem-solving.
+                          <span className="font-bold">Skill Development</span>
+                          <br />
+                          Our team helps you build the essential skills needed
+                          to navigate new stages of life, such as time
+                          management, budgeting, communication, and
+                          problem-solving.
                         </div>
                       </div>
 
                       <div className="flex flex-col items-start w-full">
                         <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
-                          <span className="font-bold">Emotional and Practical Support</span><br />
-                          We understand that change can be both exciting and challenging. Our compassionate team provides emotional support while addressing the practical aspects of your transition.
+                          <span className="font-bold">
+                            Emotional and Practical Support
+                          </span>
+                          <br />
+                          We understand that change can be both exciting and
+                          challenging. Our compassionate team provides emotional
+                          support while addressing the practical aspects of your
+                          transition.
                         </div>
                       </div>
 
                       <div className="flex flex-col items-start w-full">
                         <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
-                          <span className="font-bold">Ongoing Guidance</span><br />
-                          Life's transitions are rarely linear. We offer continued support to help you adapt, refine your goals, and succeed in your new environment.
+                          <span className="font-bold">Ongoing Guidance</span>
+                          <br />
+                          Life's transitions are rarely linear. We offer
+                          continued support to help you adapt, refine your
+                          goals, and succeed in your new environment.
                         </div>
                       </div>
                     </div>
@@ -145,33 +175,42 @@ export default function AssistLifeStageTransition() {
                         <div className="flex flex-col items-start w-full space-y-2">
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Personalized planning tailored to your unique needs and aspirations.
+                                Personalized planning tailored to your unique
+                                needs and aspirations.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                A team of experienced professionals to guide and support you.
+                                A team of experienced professionals to guide and
+                                support you.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Practical resources and skills development to ensure long-term success.
+                                Practical resources and skills development to
+                                ensure long-term success.
                               </div>
                             </div>
                           </div>
@@ -193,44 +232,56 @@ export default function AssistLifeStageTransition() {
                         <div className="flex flex-col items-start w-full space-y-2">
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Moving from school to employment or further education.
+                                Moving from school to employment or further
+                                education.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Transitioning into independent or supported living arrangements.
+                                Transitioning into independent or supported
+                                living arrangements.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Adjusting to new social or community environments.
+                                Adjusting to new social or community
+                                environments.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Navigating major life changes such as retirement or caregiving shifts.
+                                Navigating major life changes such as retirement
+                                or caregiving shifts.
                               </div>
                             </div>
                           </div>
@@ -263,9 +314,13 @@ export default function AssistLifeStageTransition() {
             <div className="flex flex-col items-center w-full">
               <div className="text-center">
                 <h2 className="font-inter text-lg sm:text-xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
-                  <span className="text-[#247FBF]">Ready to Navigate Your Next Life Stage?</span>{" "}
+                  <span className="text-[#247FBF]">
+                    Ready to Navigate Your Next Life Stage?
+                  </span>{" "}
                   <br />
-                  <span className="text-[#ADADAD]">Let's Create Your Transition Plan Together</span>
+                  <span className="text-[#ADADAD]">
+                    Let's Create Your Transition Plan Together
+                  </span>
                 </h2>
               </div>
             </div>
@@ -277,8 +332,18 @@ export default function AssistLifeStageTransition() {
                   Contact Our Transition Team
                 </span>
                 <div className="flex w-9 h-9 justify-center items-center rounded-[90px] bg-white">
-                  <svg width="18" height="18" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-                    <path d="M14.6499 5.23438V12.5469C14.6499 12.7707 14.561 12.9853 14.4027 13.1435C14.2445 13.3017 14.0299 13.3906 13.8061 13.3906C13.5823 13.3906 13.3677 13.3017 13.2095 13.1435C13.0513 12.9853 12.9624 12.7707 12.9624 12.5469V7.27344L5.40307 14.8313C5.24457 14.9898 5.02958 15.0789 4.80542 15.0789C4.58125 15.0789 4.36627 14.9898 4.20776 14.8313C4.04925 14.6728 3.96021 14.4578 3.96021 14.2337C3.96021 14.0095 4.04925 13.7945 4.20776 13.636L11.7671 6.07812H6.49362C6.26985 6.07812 6.05523 5.98923 5.897 5.831C5.73877 5.67276 5.64987 5.45815 5.64987 5.23438C5.64987 5.0106 5.73877 4.79599 5.897 4.63775C6.05523 4.47952 6.26985 4.39063 6.49362 4.39062H13.8061C14.0299 4.39062 14.2445 4.47952 14.4027 4.63775C14.561 4.79599 14.6499 5.0106 14.6499 5.23438Z" fill="black"/>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  >
+                    <path
+                      d="M14.6499 5.23438V12.5469C14.6499 12.7707 14.561 12.9853 14.4027 13.1435C14.2445 13.3017 14.0299 13.3906 13.8061 13.3906C13.5823 13.3906 13.3677 13.3017 13.2095 13.1435C13.0513 12.9853 12.9624 12.7707 12.9624 12.5469V7.27344L5.40307 14.8313C5.24457 14.9898 5.02958 15.0789 4.80542 15.0789C4.58125 15.0789 4.36627 14.9898 4.20776 14.8313C4.04925 14.6728 3.96021 14.4578 3.96021 14.2337C3.96021 14.0095 4.04925 13.7945 4.20776 13.636L11.7671 6.07812H6.49362C6.26985 6.07812 6.05523 5.98923 5.897 5.831C5.73877 5.67276 5.64987 5.45815 5.64987 5.23438C5.64987 5.0106 5.73877 4.79599 5.897 4.63775C6.05523 4.47952 6.26985 4.39063 6.49362 4.39062H13.8061C14.0299 4.39062 14.2445 4.47952 14.4027 4.63775C14.561 4.79599 14.6499 5.0106 14.6499 5.23438Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
               </button>

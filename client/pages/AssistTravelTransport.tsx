@@ -39,8 +39,17 @@ export default function AssistTravelTransport() {
             <div className="flex items-center gap-2">
               <div className="flex justify-center items-center gap-0.5">
                 <div className="flex w-[18px] h-[18px] flex-col items-start">
-                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.8186 14.5569C14.7402 14.6356 14.6471 14.698 14.5445 14.7406C14.442 14.7832 14.332 14.8051 14.221 14.8051C14.1099 14.8051 14 14.7832 13.8974 14.7406C13.7949 14.698 13.7017 14.6356 13.6233 14.5569L6.06543 6.99902V12.2725C6.06543 12.4962 5.97653 12.7108 5.8183 12.8691C5.66007 13.0273 5.44546 13.1162 5.22168 13.1162C4.9979 13.1162 4.78329 13.0273 4.62506 12.8691C4.46682 12.7108 4.37793 12.4962 4.37793 12.2725V4.95996C4.37793 4.73618 4.46682 4.52157 4.62506 4.36334C4.78329 4.20511 4.9979 4.11621 5.22168 4.11621H12.5342C12.758 4.11621 12.9726 4.20511 13.1308 4.36334C13.289 4.52157 13.3779 4.73618 13.3779 4.95996C13.3779 5.18374 13.289 5.39835 13.1308 5.55658C12.9726 5.71482 12.758 5.80371 12.5342 5.80371H7.26074L14.8186 13.363C14.8971 13.4414 14.9593 13.5344 15.0018 13.6369C15.0442 13.7393 15.0661 13.8491 15.0661 13.96C15.0661 14.0708 15.0442 14.1806 15.0018 14.2831C14.9593 14.3855 14.8971 14.4786 14.8186 14.5569Z" fill="#4A4A4A"/>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.8186 14.5569C14.7402 14.6356 14.6471 14.698 14.5445 14.7406C14.442 14.7832 14.332 14.8051 14.221 14.8051C14.1099 14.8051 14 14.7832 13.8974 14.7406C13.7949 14.698 13.7017 14.6356 13.6233 14.5569L6.06543 6.99902V12.2725C6.06543 12.4962 5.97653 12.7108 5.8183 12.8691C5.66007 13.0273 5.44546 13.1162 5.22168 13.1162C4.9979 13.1162 4.78329 13.0273 4.62506 12.8691C4.46682 12.7108 4.37793 12.4962 4.37793 12.2725V4.95996C4.37793 4.73618 4.46682 4.52157 4.62506 4.36334C4.78329 4.20511 4.9979 4.11621 5.22168 4.11621H12.5342C12.758 4.11621 12.9726 4.20511 13.1308 4.36334C13.289 4.52157 13.3779 4.73618 13.3779 4.95996C13.3779 5.18374 13.289 5.39835 13.1308 5.55658C12.9726 5.71482 12.758 5.80371 12.5342 5.80371H7.26074L14.8186 13.363C14.8971 13.4414 14.9593 13.5344 15.0018 13.6369C15.0442 13.7393 15.0661 13.8491 15.0661 13.96C15.0661 14.0708 15.0442 14.1806 15.0018 14.2831C14.9593 14.3855 14.8971 14.4786 14.8186 14.5569Z"
+                      fill="#4A4A4A"
+                    />
                   </svg>
                 </div>
                 <div className="flex flex-col justify-center items-start rounded-[74px]">
@@ -60,10 +69,13 @@ export default function AssistTravelTransport() {
               </div>
               <div className="flex w-full max-w-[800px] flex-col items-start">
                 <p className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                  Access to reliable transportation is essential for independence and participation in daily activities. At
-                  Quality Care, our Assist-Travel/Transport service is designed to help you get where you need to go
-                  safely and comfortably. Whether it's medical appointments, work, or social outings, we're here to
-                  ensure you have the support you need to stay connected to the world around you.
+                  Access to reliable transportation is essential for
+                  independence and participation in daily activities. At Quality
+                  Care, our Assist-Travel/Transport service is designed to help
+                  you get where you need to go safely and comfortably. Whether
+                  it's medical appointments, work, or social outings, we're here
+                  to ensure you have the support you need to stay connected to
+                  the world around you.
                 </p>
               </div>
             </div>
@@ -100,29 +112,50 @@ export default function AssistTravelTransport() {
                     <div className="flex flex-col items-start w-full space-y-4 sm:space-y-5 lg:space-y-6">
                       <div className="flex flex-col items-start w-full">
                         <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                          <span className="font-bold">Personalized Travel Planning</span><br />
-                          We work with you to develop a transportation plan that aligns with your daily routines, needs, and goals, ensuring that you have access to the places that matter most.
+                          <span className="font-bold">
+                            Personalized Travel Planning
+                          </span>
+                          <br />
+                          We work with you to develop a transportation plan that
+                          aligns with your daily routines, needs, and goals,
+                          ensuring that you have access to the places that
+                          matter most.
                         </div>
                       </div>
 
                       <div className="flex flex-col items-start w-full">
                         <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
-                          <span className="font-bold">Safe and Reliable Transport</span><br />
-                          Our team ensures that your journeys are safe and stress-free, whether through private transport options or support navigating public transportation systems.
+                          <span className="font-bold">
+                            Safe and Reliable Transport
+                          </span>
+                          <br />
+                          Our team ensures that your journeys are safe and
+                          stress-free, whether through private transport options
+                          or support navigating public transportation systems.
                         </div>
                       </div>
 
                       <div className="flex flex-col items-start w-full">
                         <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
-                          <span className="font-bold">Building Independence</span><br />
-                          For individuals looking to build confidence in travel, we provide guidance and training to help you navigate transportation systems independently.
+                          <span className="font-bold">
+                            Building Independence
+                          </span>
+                          <br />
+                          For individuals looking to build confidence in travel,
+                          we provide guidance and training to help you navigate
+                          transportation systems independently.
                         </div>
                       </div>
 
                       <div className="flex flex-col items-start w-full">
                         <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
-                          <span className="font-bold">Flexibility and Accessibility</span><br />
-                          Our services are designed to accommodate your schedule, mobility requirements, and any additional needs to ensure a seamless travel experience.
+                          <span className="font-bold">
+                            Flexibility and Accessibility
+                          </span>
+                          <br />
+                          Our services are designed to accommodate your
+                          schedule, mobility requirements, and any additional
+                          needs to ensure a seamless travel experience.
                         </div>
                       </div>
                     </div>
@@ -144,33 +177,42 @@ export default function AssistTravelTransport() {
                         <div className="flex flex-col items-start w-full space-y-2">
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Safe and dependable transportation to essential destinations.
+                                Safe and dependable transportation to essential
+                                destinations.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Support tailored to your mobility and accessibility needs.
+                                Support tailored to your mobility and
+                                accessibility needs.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Guidance to build confidence in independent travel.
+                                Guidance to build confidence in independent
+                                travel.
                               </div>
                             </div>
                           </div>
@@ -192,44 +234,56 @@ export default function AssistTravelTransport() {
                         <div className="flex flex-col items-start w-full space-y-2">
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Transport to medical appointments and therapy sessions.
+                                Transport to medical appointments and therapy
+                                sessions.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Assistance traveling to work, school, or community events.
+                                Assistance traveling to work, school, or
+                                community events.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Support for running errands or attending social outings.
+                                Support for running errands or attending social
+                                outings.
                               </div>
                             </div>
                           </div>
 
                           <div className="flex justify-start items-start w-full">
                             <div className="flex w-6 flex-col items-start">
-                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                •
+                              </div>
                             </div>
                             <div className="flex flex-1 flex-col items-start">
                               <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                                Guidance and training to navigate public transport systems.
+                                Guidance and training to navigate public
+                                transport systems.
                               </div>
                             </div>
                           </div>
@@ -259,9 +313,13 @@ export default function AssistTravelTransport() {
             <div className="flex flex-col items-center w-full">
               <div className="text-center">
                 <h2 className="font-inter text-lg sm:text-xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
-                  <span className="text-[#247FBF]">Ready to Explore New Destinations?</span>{" "}
+                  <span className="text-[#247FBF]">
+                    Ready to Explore New Destinations?
+                  </span>{" "}
                   <br />
-                  <span className="text-[#ADADAD]">Let's Plan Your Safe Travel Together</span>
+                  <span className="text-[#ADADAD]">
+                    Let's Plan Your Safe Travel Together
+                  </span>
                 </h2>
               </div>
             </div>
@@ -273,8 +331,18 @@ export default function AssistTravelTransport() {
                   Contact Our Travel Team
                 </span>
                 <div className="flex w-9 h-9 justify-center items-center rounded-[90px] bg-white">
-                  <svg width="18" height="18" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-                    <path d="M14.6499 5.23438V12.5469C14.6499 12.7707 14.561 12.9853 14.4027 13.1435C14.2445 13.3017 14.0299 13.3906 13.8061 13.3906C13.5823 13.3906 13.3677 13.3017 13.2095 13.1435C13.0513 12.9853 12.9624 12.7707 12.9624 12.5469V7.27344L5.40307 14.8313C5.24457 14.9898 5.02958 15.0789 4.80542 15.0789C4.58125 15.0789 4.36627 14.9898 4.20776 14.8313C4.04925 14.6728 3.96021 14.4578 3.96021 14.2337C3.96021 14.0095 4.04925 13.7945 4.20776 13.636L11.7671 6.07812H6.49362C6.26985 6.07812 6.05523 5.98923 5.897 5.831C5.73877 5.67276 5.64987 5.45815 5.64987 5.23438C5.64987 5.0106 5.73877 4.79599 5.897 4.63775C6.05523 4.47952 6.26985 4.39063 6.49362 4.39062H13.8061C14.0299 4.39062 14.2445 4.47952 14.4027 4.63775C14.561 4.79599 14.6499 5.0106 14.6499 5.23438Z" fill="black"/>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  >
+                    <path
+                      d="M14.6499 5.23438V12.5469C14.6499 12.7707 14.561 12.9853 14.4027 13.1435C14.2445 13.3017 14.0299 13.3906 13.8061 13.3906C13.5823 13.3906 13.3677 13.3017 13.2095 13.1435C13.0513 12.9853 12.9624 12.7707 12.9624 12.5469V7.27344L5.40307 14.8313C5.24457 14.9898 5.02958 15.0789 4.80542 15.0789C4.58125 15.0789 4.36627 14.9898 4.20776 14.8313C4.04925 14.6728 3.96021 14.4578 3.96021 14.2337C3.96021 14.0095 4.04925 13.7945 4.20776 13.636L11.7671 6.07812H6.49362C6.26985 6.07812 6.05523 5.98923 5.897 5.831C5.73877 5.67276 5.64987 5.45815 5.64987 5.23438C5.64987 5.0106 5.73877 4.79599 5.897 4.63775C6.05523 4.47952 6.26985 4.39063 6.49362 4.39062H13.8061C14.0299 4.39062 14.2445 4.47952 14.4027 4.63775C14.561 4.79599 14.6499 5.0106 14.6499 5.23438Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
               </button>

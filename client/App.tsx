@@ -36,16 +36,40 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/AccommodationTenancy" element={<AccommodationTenancy />} />
-            <Route path="/AssistLifeStageTransition" element={<AssistLifeStageTransition />} />
-            <Route path="/AssistPersonalActivities" element={<AssistPersonalActivities />} />
-            <Route path="/AssistTravelTransport" element={<AssistTravelTransport />} />
+            <Route
+              path="/AccommodationTenancy"
+              element={<AccommodationTenancy />}
+            />
+            <Route
+              path="/AssistLifeStageTransition"
+              element={<AssistLifeStageTransition />}
+            />
+            <Route
+              path="/AssistPersonalActivities"
+              element={<AssistPersonalActivities />}
+            />
+            <Route
+              path="/AssistTravelTransport"
+              element={<AssistTravelTransport />}
+            />
             <Route path="/SharedLiving" element={<SharedLiving />} />
-            <Route path="/CommunityParticipation" element={<CommunityParticipation />} />
-            <Route path="/DevelopmentLifeSkills" element={<DevelopmentLifeSkills />} />
+            <Route
+              path="/CommunityParticipation"
+              element={<CommunityParticipation />}
+            />
+            <Route
+              path="/DevelopmentLifeSkills"
+              element={<DevelopmentLifeSkills />}
+            />
             <Route path="/AssistiveProducts" element={<AssistiveProducts />} />
-            <Route path="/ParticipateInCommunity" element={<ParticipateInCommunity />} />
-            <Route path="/GroupCentreActivities" element={<GroupCentreActivities />} />
+            <Route
+              path="/ParticipateInCommunity"
+              element={<ParticipateInCommunity />}
+            />
+            <Route
+              path="/GroupCentreActivities"
+              element={<GroupCentreActivities />}
+            />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

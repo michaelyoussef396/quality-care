@@ -31,9 +31,11 @@ export default function Contact() {
 
               <div className="flex max-w-[800px] w-full flex-col items-center">
                 <p className="text-[#121212] text-center font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
-                  At Quality Care, we're here to assist you with your care needs. Contact us with any questions or to 
-                  schedule a consultation. We respond within a few hours, ensuring you receive the support and 
-                  guidance you need promptly. Reach out today!
+                  At Quality Care, we're here to assist you with your care
+                  needs. Contact us with any questions or to schedule a
+                  consultation. We respond within a few hours, ensuring you
+                  receive the support and guidance you need promptly. Reach out
+                  today!
                 </p>
               </div>
             </div>
