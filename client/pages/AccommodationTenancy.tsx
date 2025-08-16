@@ -25,40 +25,220 @@ export default function AccommodationTenancy() {
         </div>
       </section>
 
-      {/* Service Description Section */}
-      <section className="flex justify-center items-center py-20 px-4">
-        <div className="flex flex-col justify-center items-center gap-[60px] max-w-[1080px] w-full">
-          <div className="max-w-4xl mx-auto">
-            <div className="prose prose-lg text-gray-600 text-center">
-              <h2 className="text-[#247FBF] font-inter text-2xl font-bold mb-8">
-                Accommodation Tenancy Support
-              </h2>
-              <p className="text-lg mb-6">
-                Our Accommodation Tenancy services are designed to help individuals with disabilities find, secure, and maintain appropriate housing that meets their unique needs and preferences.
-              </p>
-              <p className="text-base mb-6">
-                We understand that finding the right accommodation can be challenging, which is why our experienced team provides comprehensive support throughout your housing journey. From initial search to ongoing tenancy management, we're here to ensure you have a safe, comfortable, and accessible place to call home.
-              </p>
-              <div className="grid md:grid-cols-2 gap-8 mt-12 text-left">
-                <div>
-                  <h3 className="text-[#247FBF] font-bold text-xl mb-4">What We Offer</h3>
-                  <ul className="list-disc list-inside space-y-2 text-base">
-                    <li>Property search assistance</li>
-                    <li>Application support and advocacy</li>
-                    <li>Lease negotiation guidance</li>
-                    <li>Accommodation modifications consultation</li>
-                    <li>Ongoing tenancy support</li>
-                  </ul>
+      {/* Article Section */}
+      <section className="flex justify-center items-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8">
+        <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10 max-w-[1080px] w-full">
+          {/* Top Part */}
+          <div className="flex flex-col justify-center items-start gap-4 sm:gap-5 lg:gap-[20px] w-full">
+            {/* Divider */}
+            <div className="flex h-4 lg:h-[17px] flex-col justify-center items-center w-full">
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#4A4A4A] to-[#121212]"></div>
+            </div>
+
+            {/* Navigation */}
+            <div className="flex items-center gap-2">
+              <div className="flex justify-center items-center gap-0.5">
+                <div className="flex w-[18px] h-[18px] flex-col items-start">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.0557 14.8235C14.9773 14.9022 14.8842 14.9646 14.7816 15.0072C14.679 15.0498 14.5691 15.0717 14.458 15.0717C14.347 15.0717 14.237 15.0498 14.1345 15.0072C14.0319 14.9646 13.9388 14.9022 13.8604 14.8235L6.30249 7.26562V12.5391C6.30249 12.7628 6.2136 12.9774 6.05536 13.1357C5.89713 13.2939 5.68252 13.3828 5.45874 13.3828C5.23496 13.3828 5.02035 13.2939 4.86212 13.1357C4.70388 12.9774 4.61499 12.7628 4.61499 12.5391V5.22656C4.61499 5.00279 4.70388 4.78817 4.86212 4.62994C5.02035 4.47171 5.23496 4.38281 5.45874 4.38281H12.7712C12.995 4.38281 13.2096 4.47171 13.3679 4.62994C13.5261 4.78817 13.615 5.00279 13.615 5.22656C13.615 5.45034 13.5261 5.66495 13.3679 5.82318C13.2096 5.98142 12.995 6.07031 12.7712 6.07031H7.4978L15.0557 13.6296C15.1341 13.708 15.1964 13.801 15.2388 13.9035C15.2813 14.0059 15.3032 14.1157 15.3032 14.2266C15.3032 14.3374 15.2813 14.4472 15.2388 14.5497C15.1964 14.6521 15.1341 14.7452 15.0557 14.8235Z" fill="#4A4A4A"/>
+                  </svg>
                 </div>
-                <div>
-                  <h3 className="text-[#247FBF] font-bold text-xl mb-4">Our Approach</h3>
-                  <ul className="list-disc list-inside space-y-2 text-base">
-                    <li>Person-centered planning</li>
-                    <li>Collaborative goal setting</li>
-                    <li>Individual needs assessment</li>
-                    <li>Community integration focus</li>
-                    <li>Long-term sustainability planning</li>
-                  </ul>
+                <div className="flex flex-col justify-center items-start rounded-[74px]">
+                  <div className="text-[#121212] font-inter text-base font-bold leading-6 tracking-[0.16px]">
+                    Home
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Title Description */}
+            <div className="flex w-full flex-col justify-center items-start gap-1">
+              <div className="flex w-full max-w-[700px] flex-col items-start">
+                <h2 className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px] mb-4">
+                  Empowering Your Path to a Safe and Comfortable Home
+                </h2>
+              </div>
+              <div className="flex w-full max-w-[800px] flex-col items-start">
+                <p className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                  Finding and maintaining a suitable home is a fundamental step toward independence and well-being.
+                  At Quality Care, our Accommodation Tenancy service is designed to assist individuals in securing
+                  and sustaining housing that meets their specific needs, preferences, and circumstances. From
+                  understanding tenancy rights to setting up a safe and comfortable living environment, we are here to
+                  guide you every step of the way.
+                </p>
+              </div>
+            </div>
+
+            {/* Divider with opacity */}
+            <div className="flex h-4 lg:h-[17px] flex-col justify-center items-center w-full opacity-80">
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#4A4A4A] to-transparent"></div>
+            </div>
+          </div>
+
+          {/* Main Content with Image */}
+          <div className="flex flex-col justify-center items-center gap-6 sm:gap-7 lg:gap-[30px] w-full rounded-2xl bg-white/5 p-4 sm:p-6 lg:p-7">
+            {/* Image */}
+            <div className="w-full max-w-[1024px] h-[300px] sm:h-[400px] lg:h-[558px] rounded-lg overflow-hidden border border-gray-300/50">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/9f9395882df4b6450bfda4cdbdd053d693f897d0?width=2048"
+                alt="Person in wheelchair working in modern kitchen"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Content Sections */}
+            <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+              {/* Our Approach Section */}
+              <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+                <div className="flex w-full max-w-[1024px] flex-col items-start">
+                  <h3 className="text-[#247FBF] font-inter text-lg sm:text-xl lg:text-2xl font-bold leading-[1.4] tracking-[0.24px] mb-6">
+                    Our Approach to Accommodation Tenancy
+                  </h3>
+                </div>
+
+                <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+                  <div className="flex w-full max-w-[1024px] flex-col justify-center items-start gap-1">
+                    <div className="flex flex-col items-start w-full space-y-4 sm:space-y-5 lg:space-y-6">
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Personalized Housing Plans</span><br />
+                          We work with you to identify your unique housing requirements and preferences, ensuring that the options explored align with your lifestyle and goals.
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Tenancy Support and Guidance</span><br />
+                          Our team provides clear advice on tenancy agreements, legal rights, and responsibilities, helping you feel empowered and informed throughout the process.
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Home Setup Assistance</span><br />
+                          Once housing is secured, we assist with setting up your new home, from organizing utilities to ensuring accessibility and safety.
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Ongoing Support</span><br />
+                          We remain by your side, offering continued assistance to help you maintain your living situation and address any challenges that arise.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Horizontal Divider */}
+                  <div className="h-px w-full bg-gray-400/30"></div>
+
+                  {/* Why Choose Us Section */}
+                  <div className="flex flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-[10px] w-full">
+                    <div className="flex w-full max-w-[1024px] flex-col items-start">
+                      <h3 className="text-[#247FBF] font-inter text-lg sm:text-xl lg:text-2xl font-bold leading-[1.4] tracking-[0.24px]">
+                        Why Choose Us for Accommodation Tenancy?
+                      </h3>
+                    </div>
+
+                    <div className="flex flex-col justify-center items-center w-full">
+                      <div className="flex flex-col items-start w-full">
+                        <div className="flex flex-col items-start w-full space-y-2">
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Expertise in navigating the housing process for individuals with disabilities
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                A compassionate, person-centered approach tailored to your needs.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Ongoing support to ensure long-term housing stability and comfort.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Horizontal Divider */}
+                  <div className="h-px w-full bg-gray-400/30"></div>
+                </div>
+              </div>
+
+              {/* Quick Tips Section */}
+              <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+                <div className="flex flex-col justify-center items-center w-full">
+                  <div className="flex flex-col items-start w-full">
+                    <h3 className="text-[#247FBF] font-inter text-lg sm:text-xl lg:text-2xl font-normal leading-[1.4] tracking-[0.24px]">
+                      Quick Tips for a Successful Transition:
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+                  <div className="flex flex-col justify-center items-center w-full">
+                    <div className="flex flex-col justify-center items-center w-full">
+                      <div className="flex flex-col items-start w-full">
+                        <div className="flex flex-col items-start w-full space-y-2">
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Be clear about your housing needs and preferences.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Understand your tenancy rights and responsibilities.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Reach out for support—our team is here to help every step of the way.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Final Horizontal Divider */}
+                  <div className="h-px w-full bg-gray-400/30"></div>
                 </div>
               </div>
             </div>
