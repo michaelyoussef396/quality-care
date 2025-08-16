@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AccommodationTenancy from "./pages/AccommodationTenancy";
+import AssistLifeStageTransition from "./pages/AssistLifeStageTransition";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
