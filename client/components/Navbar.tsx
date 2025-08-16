@@ -80,7 +80,7 @@ export default function Navbar() {
                     <div className="pt-4 border-t border-gray-700">
                       <h3 className="text-[#247FBF] text-sm font-semibold mb-3 uppercase tracking-wider font-inter">Community Engagement</h3>
                       <ul className="space-y-2">
-                        <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Community Participation</a></li>
+                        <li><Link to="/CommunityParticipation" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Community Participation</Link></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Development-Life Skills</a></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assistive Products</a></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Participate in Community</a></li>
@@ -199,7 +199,7 @@ export default function Navbar() {
                       <div>
                         <h3 className="text-[#247FBF] text-sm font-semibold mb-2 px-3 uppercase tracking-wider font-inter">Community Engagement</h3>
                         <div className="space-y-1">
-                          <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Community Participation</a>
+                          <Link to="/CommunityParticipation" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Community Participation</Link>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Development-Life Skills</a>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Assistive Products</a>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Participate in Community</a>
