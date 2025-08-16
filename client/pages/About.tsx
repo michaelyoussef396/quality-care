@@ -1,4 +1,5 @@
 import Divider from "../components/Divider";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
