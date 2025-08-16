@@ -30,7 +30,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen">
+        <div className="min-h-screen mobile-safe">
           <Navbar />
           <Routes>
             <Route path="/" element={<Index />} />

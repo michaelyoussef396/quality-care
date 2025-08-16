@@ -1,10 +1,18 @@
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 
 export default function ParticipateInCommunity() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="flex justify-center items-center py-20 px-4 min-h-[465px]">
+      <motion.section 
+        className="flex justify-center items-center py-20 px-4 min-h-[465px]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex min-w-full px-4 sm:px-8 lg:px-[262.5px] flex-col justify-center items-center gap-6 sm:gap-8 lg:gap-[30px] max-w-[1080px] w-full">
           {/* Participate in Community Badge */}
           <div className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
@@ -23,10 +31,16 @@ export default function ParticipateInCommunity() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Article Section */}
-      <section className="flex justify-center items-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8">
+      <motion.section 
+        className="flex justify-center items-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10 max-w-[1080px] w-full">
           {/* Top Part */}
           <div className="flex flex-col justify-center items-start gap-4 sm:gap-5 lg:gap-[20px] w-full">
@@ -292,10 +306,16 @@ export default function ParticipateInCommunity() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Contact CTA Section */}
-      <section className="flex justify-center items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-[240px]">
+      <motion.section 
+        className="flex justify-center items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-[240px]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex h-auto lg:h-[278px] w-full justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] py-8 sm:py-12 lg:py-8">
           <div className="flex min-w-full max-w-[600px] flex-col justify-center items-center gap-4 sm:gap-6 lg:gap-[20px]">
             {/* Contact us Badge */}
@@ -319,7 +339,10 @@ export default function ParticipateInCommunity() {
 
             {/* CTA Button */}
             <div className="flex flex-col items-center">
-              <button className="flex items-center gap-4 px-5 py-[6px] pl-5 pr-[10px] rounded-[24px] bg-[#247FBF] hover:bg-[#1e6a9f] transition-colors group">
+              <Link 
+                to="/contact"
+                className="flex items-center gap-4 px-5 py-[6px] pl-5 pr-[10px] rounded-[24px] bg-[#247FBF] hover:bg-[#1e6a9f] transition-colors group"
+              >
                 <span className="text-white text-center font-inter text-[15px] font-medium leading-6 tracking-[0.15px]">
                   Book Free Consultation
                 </span>
@@ -338,11 +361,11 @@ export default function ParticipateInCommunity() {
                     />
                   </svg>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Footer */}
       <Footer />

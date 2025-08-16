@@ -1,36 +1,91 @@
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, X, Menu } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useFocusTrap } from "@/hooks/use-focus-trap";
+import { useEscapeKey } from "@/hooks/use-escape-key";
 
 export default function Navbar() {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [shouldShowMenu, setShouldShowMenu] = useState(false);
+  const [isDesktopServicesOpen, setIsDesktopServicesOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const isActive = (path: string) => location.pathname === path;
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    if (!isMobileMenuOpen) {
+      setShouldShowMenu(true);
+      setTimeout(() => setIsMobileMenuOpen(true), 10);
+    } else {
+      setIsMobileMenuOpen(false);
+      setTimeout(() => setShouldShowMenu(false), 300);
+    }
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    setIsServicesOpen(false);
+    setTimeout(() => setShouldShowMenu(false), 300);
   };
 
   const toggleServices = () => {
     setIsServicesOpen(!isServicesOpen);
   };
 
+  // Focus trap and escape key handling for mobile menu
+  const mobileMenuRef = useFocusTrap<HTMLDivElement>(isMobileMenuOpen);
+  useEscapeKey(closeMobileMenu, isMobileMenuOpen);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
+  // Track scroll position for enhanced navbar styling
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
-      <nav className="bg-[#121212] h-16 flex items-center sticky top-0 w-full border-b border-[rgba(87,87,87,0.30)] z-50">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+      <motion.nav 
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className={`${
+          isScrolled 
+            ? "bg-[#121212]/98 backdrop-blur-md shadow-xl" 
+            : "bg-[#121212]/95 backdrop-blur-sm shadow-lg"
+        } h-16 flex items-center sticky top-0 w-full border-b border-[rgba(87,87,87,0.30)] z-[100] overflow-visible transition-all duration-300`}
+      >
+        <div className="w-full max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+          <div className="flex items-center justify-between h-16 min-w-0">
             {/* Logo Section - Always far left */}
-            <Link to="/" className="flex items-center flex-shrink-0">
+            <Link to="/" className="flex items-center flex-shrink-0 min-w-0 max-w-[70%] sm:max-w-none">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/03e31ad5f89f5532eb953ff6c5194fd3514e703e?width=144"
                 alt="Quality Care Logo"
-                className="h-12 w-auto"
+                className="h-10 sm:h-12 w-auto flex-shrink-0"
               />
-              <div className="ml-3">
-                <h1 className="text-[#247FBF] text-xl font-bold leading-tight font-inter">
+              <div className="ml-2 sm:ml-3 min-w-0 overflow-hidden">
+                <h1 className="text-[#247FBF] text-lg sm:text-xl font-bold leading-tight font-inter truncate">
                   Quality Care
                 </h1>
               </div>
@@ -60,16 +115,33 @@ export default function Navbar() {
                 About Us
               </Link>
 
-              <div className="relative group">
+              <div 
+                className="relative"
+                onMouseEnter={() => setIsDesktopServicesOpen(true)}
+                onMouseLeave={() => setIsDesktopServicesOpen(false)}
+              >
                 <button className="flex items-center gap-2 text-base font-medium transition-colors duration-200 font-inter text-white hover:text-[#247FBF]">
                   Services
-                  <div className="w-5 h-5 flex items-center justify-center">
-                    <ChevronDown className="w-4 h-4 text-[#247FBF] group-hover:text-[#247FBF] transition-transform duration-200 group-hover:rotate-180" />
-                  </div>
+                  <motion.div 
+                    className="w-5 h-5 flex items-center justify-center"
+                    animate={{ rotate: isDesktopServicesOpen ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <ChevronDown className="w-4 h-4 text-[#247FBF]" />
+                  </motion.div>
                 </button>
 
-                {/* Desktop Services Dropdown */}
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-[#1a1a1a] border border-gray-700 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                {/* Desktop Services Dropdown with Framer Motion */}
+                <AnimatePresence>
+                  {isDesktopServicesOpen && (
+                    <motion.div 
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.2, ease: "easeOut" }}
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-[#1a1a1a] border border-gray-700 rounded-lg shadow-2xl"
+                      style={{ zIndex: 99999 }}
+                    >
                   <div className="p-5">
                     <div className="mb-5">
                       <h3 className="text-[#247FBF] text-sm font-semibold mb-3 uppercase tracking-wider font-inter">
@@ -166,7 +238,9 @@ export default function Navbar() {
                       </ul>
                     </div>
                   </div>
-                </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               <Link
@@ -185,7 +259,9 @@ export default function Navbar() {
             <button
               className="lg:hidden text-white p-2 rounded-md hover:bg-white/10 transition-colors"
               onClick={toggleMobileMenu}
-              aria-label="Toggle menu"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -195,33 +271,57 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#121212] z-40 lg:hidden">
-          <div className="flex flex-col h-full">
+      <AnimatePresence>
+        {shouldShowMenu && (
+          <>
+            {/* Backdrop overlay for click-to-close */}
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 bg-black/50 z-30 lg:hidden"
+              onClick={closeMobileMenu}
+              aria-hidden="true"
+            />
+            
+            {/* Mobile Menu Panel */}
+            <motion.div 
+              id="mobile-menu"
+              ref={mobileMenuRef}
+              role="dialog"
+              aria-modal="true"
+              aria-label="Navigation menu"
+              initial={{ x: "100%" }}
+              animate={{ x: isMobileMenuOpen ? "0%" : "100%" }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="fixed inset-y-0 right-0 w-full bg-[#121212] z-40 lg:hidden overflow-x-hidden"
+            >
+            <div className="flex flex-col h-full">
             {/* Mobile Header */}
-            <div className="flex items-center justify-between h-16 px-4 sm:px-6 border-b border-[rgba(87,87,87,0.30)]">
+            <div className="flex items-center justify-between h-16 px-2 sm:px-4 border-b border-[rgba(87,87,87,0.30)] min-w-0">
               <Link
                 to="/"
-                className="flex items-center"
-                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex items-center flex-shrink-0 min-w-0 max-w-[70%]"
+                onClick={closeMobileMenu}
               >
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/03e31ad5f89f5532eb953ff6c5194fd3514e703e?width=144"
                   alt="Quality Care Logo"
-                  className="h-12 w-auto"
+                  className="h-10 sm:h-12 w-auto flex-shrink-0"
                 />
-                <div className="ml-3">
-                  <h1 className="text-[#247FBF] text-xl font-bold leading-tight font-inter">
+                <div className="ml-2 sm:ml-3 min-w-0 overflow-hidden">
+                  <h1 className="text-[#247FBF] text-lg sm:text-xl font-bold leading-tight font-inter truncate">
                     Quality Care
                   </h1>
                 </div>
               </Link>
               <button
                 className="text-white p-2 rounded-md hover:bg-white/10 transition-colors"
-                onClick={toggleMobileMenu}
+                onClick={closeMobileMenu}
                 aria-label="Close menu"
               >
                 <X className="w-6 h-6" />
@@ -229,7 +329,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Navigation */}
-            <nav className="flex-1 px-4 sm:px-6 py-6 overflow-y-auto">
+            <nav className="flex-1 px-2 sm:px-4 py-6 overflow-y-auto overflow-x-hidden">
               <div className="space-y-1">
                 <Link
                   to="/"
@@ -238,7 +338,7 @@ export default function Navbar() {
                       ? "text-[#247FBF] bg-[#247FBF]/10"
                       : "text-white hover:text-[#247FBF] hover:bg-white/5"
                   }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={closeMobileMenu}
                 >
                   Home
                 </Link>
@@ -250,7 +350,7 @@ export default function Navbar() {
                       ? "text-[#247FBF] bg-[#247FBF]/10"
                       : "text-white hover:text-[#247FBF] hover:bg-white/5"
                   }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={closeMobileMenu}
                 >
                   About Us
                 </Link>
@@ -262,14 +362,23 @@ export default function Navbar() {
                     onClick={toggleServices}
                   >
                     Services
-                    <ChevronDown
-                      className={`w-5 h-5 transition-transform duration-200 ${
-                        isServicesOpen ? "rotate-180" : ""
-                      }`}
-                    />
+                    <motion.div
+                      animate={{ rotate: isServicesOpen ? 180 : 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <ChevronDown className="w-5 h-5" />
+                    </motion.div>
                   </button>
 
-                  {isServicesOpen && (
+                  <AnimatePresence>
+                    {isServicesOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="overflow-hidden"
+                      >
                     <div className="px-3 py-2 space-y-4">
                       <div>
                         <h3 className="text-[#247FBF] text-sm font-semibold mb-2 px-3 uppercase tracking-wider font-inter">
@@ -279,35 +388,35 @@ export default function Navbar() {
                           <Link
                             to="/AccommodationTenancy"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Accommodation Tenancy
                           </Link>
                           <Link
                             to="/AssistLifeStageTransition"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Assist-Life Stage, Transition
                           </Link>
                           <Link
                             to="/AssistPersonalActivities"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Assist-Personal Activities
                           </Link>
                           <Link
                             to="/AssistTravelTransport"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Assist-Travel/Transport
                           </Link>
                           <Link
                             to="/SharedLiving"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Shared Living
                           </Link>
@@ -322,42 +431,44 @@ export default function Navbar() {
                           <Link
                             to="/CommunityParticipation"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Community Participation
                           </Link>
                           <Link
                             to="/DevelopmentLifeSkills"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Development-Life Skills
                           </Link>
                           <Link
                             to="/AssistiveProducts"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Assistive Products
                           </Link>
                           <Link
                             to="/ParticipateInCommunity"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Participate in Community
                           </Link>
                           <Link
                             to="/GroupCentreActivities"
                             className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                           >
                             Group/Centre Activities
                           </Link>
                         </div>
                       </div>
                     </div>
-                  )}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
 
                 <Link
@@ -367,15 +478,18 @@ export default function Navbar() {
                       ? "text-[#247FBF] bg-[#247FBF]/10"
                       : "text-white hover:text-[#247FBF] hover:bg-white/5"
                   }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={closeMobileMenu}
                 >
                   Contact Us
                 </Link>
               </div>
             </nav>
           </div>
-        </div>
+            </motion.div>
+        </>
       )}
+      </AnimatePresence>
+
     </>
   );
 }

@@ -1,45 +1,97 @@
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Divider from "../components/Divider";
 import Footer from "../components/Footer";
+import SEO, { createArticleSchema } from "../components/SEO";
 
 export default function About() {
+  const aboutSchema = createArticleSchema(
+    "About Quality Care - Professional NDIS Services",
+    "Learn about Quality Care's mission, values, and commitment to providing compassionate NDIS services across Australia. Our experienced team supports individuals with disabilities.",
+    "https://qualitycareproviders.com.au/about"
+  );
+
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="About Us"
+        description="Learn about Quality Care's mission, values, and commitment to providing compassionate NDIS services across Australia. Our experienced team supports individuals with disabilities to achieve independence and fulfillment."
+        keywords="about quality care, ndis provider, disability services team, mission values, experienced support workers, australia"
+        canonical="https://qualitycareproviders.com.au/about"
+        schemaMarkup={aboutSchema}
+      />
       {/* Hero Section */}
-      <section className="flex justify-center items-center py-20 px-4 min-h-[465px]">
+      <motion.section 
+        className="flex justify-center items-center py-20 px-4 min-h-[465px]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex flex-col justify-center items-center gap-[30px] max-w-[1080px] w-full px-4 sm:px-8 lg:px-[290px]">
           {/* About Us Badge */}
-          <div className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
+          <motion.div 
+            className="flex px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
             <div className="text-[#247FBF] font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
               About us
             </div>
-          </div>
+          </motion.div>
 
           {/* Main Heading */}
-          <div className="flex max-w-[500px] w-full flex-col items-center">
+          <motion.div 
+            className="flex max-w-[500px] w-full flex-col items-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          >
             <div className="text-center">
               <h1 className="text-[#247FBF] text-center font-inter text-[28px] font-bold leading-[42px] tracking-[0.28px]">
                 <div>Your Trusted Partners— in</div>
                 <div>Empowering Independence</div>
               </h1>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Mission Section - How We Started */}
-      <section className="flex justify-center items-start py-12 sm:py-16 lg:py-20 px-4">
+      <motion.section 
+        className="flex justify-center items-start py-12 sm:py-16 lg:py-20 px-4"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex justify-center items-start gap-6 sm:gap-8 lg:gap-10 max-w-[1080px] w-full flex-col lg:flex-row">
           {/* Left Side - Content */}
           <div className="flex w-full flex-col justify-center items-start gap-6 sm:gap-8 lg:gap-[30px] flex-1">
             {/* How We Started Badge */}
-            <div className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)] w-full sm:w-auto">
+            <motion.div 
+              className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)] w-full sm:w-auto"
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            >
               <div className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px] text-center sm:text-left">
                 How We Started
               </div>
-            </div>
+            </motion.div>
 
             {/* Title and Description */}
-            <div className="flex flex-col justify-start items-start gap-4 sm:gap-6 lg:gap-[7.385px] w-full">
+            <motion.div 
+              className="flex flex-col justify-start items-start gap-4 sm:gap-6 lg:gap-[7.385px] w-full"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+            >
               {/* Section Heading */}
               <div className="flex w-full flex-col items-start mb-2 sm:mb-4">
                 <h2 className="text-[#247FBF] font-inter text-lg sm:text-xl lg:text-2xl font-bold leading-[1.4] tracking-[0.24px]">
@@ -80,11 +132,17 @@ export default function About() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Right Side - Image */}
-          <div className="flex w-full lg:w-[520px] flex-col justify-center items-center rounded-lg flex-1">
+          <motion.div 
+            className="flex w-full lg:w-[520px] flex-col justify-center items-center rounded-lg flex-1"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          >
             <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-lg overflow-hidden">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/7ca01cbb3c207b0839c2d60478b78c97b6759d38?width=1040"
@@ -92,15 +150,27 @@ export default function About() {
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Our Vision Section */}
-      <section className="flex justify-center items-start py-12 sm:py-16 lg:py-20 px-4">
+      <motion.section 
+        className="flex justify-center items-start py-12 sm:py-16 lg:py-20 px-4"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex justify-center items-start gap-6 sm:gap-8 lg:gap-10 max-w-[1080px] w-full flex-col lg:flex-row">
           {/* Left Side - Image */}
-          <div className="flex w-full lg:w-[520px] flex-col justify-center items-center rounded-lg flex-1 order-2 lg:order-1">
+          <motion.div 
+            className="flex w-full lg:w-[520px] flex-col justify-center items-center rounded-lg flex-1 order-2 lg:order-1"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
             <div className="w-full h-[300px] sm:h-[400px] md:h-[442px] lg:w-[520px] lg:h-[442px] rounded-lg overflow-hidden">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/4fd12800c9f749ee4abe5d8f5b4ccc53cb4eb62e?width=1040"
@@ -108,19 +178,37 @@ export default function About() {
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Side - Content */}
-          <div className="flex w-full flex-col justify-center items-start gap-6 sm:gap-8 lg:gap-[30px] flex-1 order-1 lg:order-2">
+          <motion.div 
+            className="flex w-full flex-col justify-center items-start gap-6 sm:gap-8 lg:gap-[30px] flex-1 order-1 lg:order-2"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+          >
             {/* Our Vision Badge */}
-            <div className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)] w-full sm:w-auto">
+            <motion.div 
+              className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)] w-full sm:w-auto"
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
+            >
               <div className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px] text-center sm:text-left">
                 Our Vision
               </div>
-            </div>
+            </motion.div>
 
             {/* Title and Description */}
-            <div className="flex flex-col justify-start items-start gap-4 sm:gap-6 lg:gap-[7.275px] w-full">
+            <motion.div 
+              className="flex flex-col justify-start items-start gap-4 sm:gap-6 lg:gap-[7.275px] w-full"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
+            >
               {/* Section Heading */}
               <div className="flex w-full flex-col items-start mb-2 sm:mb-4">
                 <h2 className="text-[#247FBF] font-inter text-lg sm:text-xl lg:text-2xl font-bold leading-[1.4] tracking-[0.24px]">
@@ -137,36 +225,60 @@ export default function About() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Divider */}
       <Divider />
 
       {/* Our Mission Section */}
-      <section className="flex justify-center items-start py-12 sm:py-16 lg:py-20 px-4">
+      <motion.section 
+        className="flex justify-center items-start py-12 sm:py-16 lg:py-20 px-4"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex justify-center items-start gap-6 sm:gap-8 lg:gap-10 max-w-[1080px] w-full flex-col lg:flex-row">
           {/* Left Side - Content */}
-          <div className="flex w-full flex-col justify-center items-start gap-6 sm:gap-8 lg:gap-[60px] flex-1">
+          <motion.div 
+            className="flex w-full flex-col justify-center items-start gap-6 sm:gap-8 lg:gap-[60px] flex-1"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
             {/* Title and Button with Divider */}
             <div className="flex w-full flex-col justify-center items-start gap-2 sm:gap-4 lg:gap-[10px]">
               {/* Title and Button */}
               <div className="flex flex-col justify-center items-start gap-6 sm:gap-8 lg:gap-[30px] w-full">
                 {/* Our Mission Badge */}
-                <div className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)] w-full sm:w-auto">
+                <motion.div 
+                  className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)] w-full sm:w-auto"
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+                >
                   <div className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px] text-center sm:text-left">
                     Our Mission
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Section Heading */}
-                <div className="flex w-full max-w-[500px] flex-col items-start">
+                <motion.div 
+                  className="flex w-full max-w-[500px] flex-col items-start"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
+                >
                   <h2 className="text-[#247FBF] font-inter text-lg sm:text-xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
                     Delivering Empowerment Through Compassionate Care
                   </h2>
-                </div>
+                </motion.div>
               </div>
 
               {/* Horizontal Divider */}
@@ -174,7 +286,13 @@ export default function About() {
             </div>
 
             {/* Description */}
-            <div className="flex w-full justify-center items-center">
+            <motion.div 
+              className="flex w-full justify-center items-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
+            >
               <div className="flex w-full flex-col items-start gap-6 sm:gap-8 lg:gap-[39px]">
                 <div className="w-full">
                   <p className="text-[rgba(18,18,18,0.72)] font-inter text-base sm:text-lg font-bold leading-[1.4]">
@@ -191,11 +309,17 @@ export default function About() {
                 {/* Bottom Border */}
                 <div className="w-full h-px border-b border-[rgba(87,87,87,0.30)]"></div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Right Side - Image */}
-          <div className="flex w-full lg:w-[449px] flex-col justify-center items-center rounded-lg flex-1">
+          <motion.div 
+            className="flex w-full lg:w-[449px] flex-col justify-center items-center rounded-lg flex-1"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+          >
             <div className="w-full h-[400px] sm:h-[500px] lg:w-[449px] lg:h-[542px] rounded-lg overflow-hidden relative">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/20bb09de5fed6309adec03347fe8b457641195a4?width=898"
@@ -205,23 +329,47 @@ export default function About() {
               {/* Border Overlay */}
               <div className="absolute inset-0 w-full h-full rounded-lg border border-[rgba(119,119,119,0.47)]"></div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Contact Us CTA Section */}
-      <section className="flex justify-center items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-[240px]">
-        <div className="flex h-auto lg:h-[278px] w-full justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] py-8 sm:py-12 lg:py-8">
+      <motion.section 
+        className="flex justify-center items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-[240px]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <motion.div 
+          className="flex h-auto lg:h-[278px] w-full justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] py-8 sm:py-12 lg:py-8"
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+        >
           <div className="flex min-w-full max-w-[600px] flex-col justify-center items-center gap-4 sm:gap-6 lg:gap-[20px]">
             {/* Contact us Badge */}
-            <div className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
+            <motion.div 
+              className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]"
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+            >
               <div className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
                 Contact us
               </div>
-            </div>
+            </motion.div>
 
             {/* Main Heading */}
-            <div className="flex flex-col items-center w-full">
+            <motion.div 
+              className="flex flex-col items-center w-full"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
+            >
               <div className="text-center">
                 <h2 className="font-inter text-lg sm:text-xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
                   <span className="text-[#247FBF]">Book Your Consultation—</span>{" "}
@@ -230,11 +378,20 @@ export default function About() {
                   <span className="text-[#ADADAD]">Step Towards Quality Care</span>
                 </h2>
               </div>
-            </div>
+            </motion.div>
 
             {/* CTA Button */}
-            <div className="flex flex-col items-center">
-              <button className="flex items-center gap-4 px-5 py-[6px] pl-5 pr-[10px] rounded-[24px] bg-[#247FBF] hover:bg-[#1e6a9f] transition-colors group">
+            <motion.div 
+              className="flex flex-col items-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
+            >
+              <Link 
+                to="/contact"
+                className="flex items-center gap-4 px-5 py-[6px] pl-5 pr-[10px] rounded-[24px] bg-[#247FBF] hover:bg-[#1e6a9f] transition-colors group"
+              >
                 <span className="text-white text-center font-inter text-[15px] font-medium leading-6 tracking-[0.15px]">
                   Book Free Consultation
                 </span>
@@ -243,11 +400,11 @@ export default function About() {
                     <path d="M14.6499 5.23438V12.5469C14.6499 12.7707 14.561 12.9853 14.4027 13.1435C14.2445 13.3017 14.0299 13.3906 13.8061 13.3906C13.5823 13.3906 13.3677 13.3017 13.2095 13.1435C13.0513 12.9853 12.9624 12.7707 12.9624 12.5469V7.27344L5.40307 14.8313C5.24457 14.9898 5.02958 15.0789 4.80542 15.0789C4.58125 15.0789 4.36627 14.9898 4.20776 14.8313C4.04925 14.6728 3.96021 14.4578 3.96021 14.2337C3.96021 14.0095 4.04925 13.7945 4.20776 13.636L11.7671 6.07812H6.49362C6.26985 6.07812 6.05523 5.98923 5.897 5.831C5.73877 5.67276 5.64987 5.45815 5.64987 5.23438C5.64987 5.0106 5.73877 4.79599 5.897 4.63775C6.05523 4.47952 6.26985 4.39063 6.49362 4.39062H13.8061C14.0299 4.39062 14.2445 4.47952 14.4027 4.63775C14.561 4.79599 14.6499 5.0106 14.6499 5.23438Z" fill="black"/>
                   </svg>
                 </div>
-              </button>
-            </div>
+              </Link>
+            </motion.div>
           </div>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
       {/* Footer */}
       <Footer />

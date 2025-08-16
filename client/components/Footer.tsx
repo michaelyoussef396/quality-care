@@ -1,9 +1,28 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
+  const mainLinks = [
+    { text: 'Home', path: '/' },
+    { text: 'About', path: '/about' },
+    { text: 'Contact', path: '/contact' }
+  ];
+
+  const serviceLinks = [
+    { text: 'Accommodation Support', path: '/AccommodationTenancy' },
+    { text: 'Travel & Transport', path: '/AssistTravelTransport' },
+    { text: 'Personal Activities', path: '/AssistPersonalActivities' },
+    { text: 'Life Skills Development', path: '/DevelopmentLifeSkills' },
+    { text: 'Assistive Products', path: '/AssistiveProducts' },
+    { text: 'Community Participation', path: '/CommunityParticipation' },
+    { text: 'Shared Living', path: '/SharedLiving' },
+    { text: 'Life Transition Support', path: '/AssistLifeStageTransition' }
+  ];
+
   return (
     <footer className="flex py-[30px] flex-col items-center w-full">
       <div className="flex flex-col items-center w-full">
         <div className="flex w-full max-w-[1078px] flex-col justify-center items-center">
-          <div className="flex min-w-full flex-col justify-center items-center gap-2">
+          <div className="flex min-w-full flex-col justify-center items-center gap-6">
             {/* Logos */}
             <div className="flex items-center gap-[35px]">
               <div className="flex w-[179px] justify-center items-center">
@@ -23,7 +42,7 @@ export default function Footer() {
             </div>
             
             {/* ABN */}
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-center">
               <p className="text-[#121212] font-[Unna] text-[19px] font-normal leading-[22.8px] tracking-[1.52px] uppercase">
                 ABN: 57 663 460 071
               </p>
@@ -31,7 +50,7 @@ export default function Footer() {
             
             {/* Copyright */}
             <div className="flex justify-center items-center w-full">
-              <div className="flex flex-col items-start opacity-80">
+              <div className="flex flex-col items-center opacity-80">
                 <p className="text-[#121212] font-inter text-sm font-normal leading-[23.1px] tracking-[0.28px]">
                   © 2024 Quality Care. All rights reserved.
                 </p>

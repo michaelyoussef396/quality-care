@@ -15,6 +15,19 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: "dist/spa",
+    target: 'es2015',
+    minify: mode === 'production' ? 'esbuild' : false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+          animation: ['framer-motion'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 600,
+    sourcemap: mode !== 'production',
   },
   plugins: [react(), expressPlugin()],
   resolve: {

@@ -1,32 +1,57 @@
+import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 
 export default function AssistLifeStageTransition() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="flex justify-center items-center py-20 px-4 min-h-[465px]">
+      <motion.section 
+        className="flex justify-center items-center py-20 px-4 min-h-[465px]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex min-w-full px-4 sm:px-8 lg:px-[262.5px] flex-col justify-center items-center gap-6 sm:gap-8 lg:gap-[30px] max-w-[1080px] w-full">
           {/* Assist-Life Stage, Transition Badge */}
-          <div className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]">
+          <motion.div 
+            className="flex px-4 sm:px-5 py-2 justify-center items-center rounded-md bg-[rgba(227,169,121,0.05)]"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
             <div className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px] text-center">
               Assist-Life Stage, Transition
             </div>
-          </div>
+          </motion.div>
 
           {/* Main Heading */}
-          <div className="flex max-w-[555px] w-full flex-col items-center">
+          <motion.div 
+            className="flex max-w-[555px] w-full flex-col items-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          >
             <div className="text-center">
               <h1 className="text-[#247FBF] text-center font-inter text-lg sm:text-xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
                 <div>Guiding You Through Life's Important</div>
                 <div>Milestones with Care and Expertise</div>
               </h1>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Article Section */}
-      <section className="flex justify-center items-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8">
+      <motion.section 
+        className="flex justify-center items-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10 max-w-[1080px] w-full">
           {/* Top Part */}
           <div className="flex flex-col justify-center items-start gap-4 sm:gap-5 lg:gap-[20px] w-full">
@@ -297,10 +322,16 @@ export default function AssistLifeStageTransition() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Contact CTA Section */}
-      <section className="flex justify-center items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-[240px]">
+      <motion.section 
+        className="flex justify-center items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-[240px]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex h-auto lg:h-[278px] w-full justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] py-8 sm:py-12 lg:py-8">
           <div className="flex min-w-full max-w-[600px] flex-col justify-center items-center gap-4 sm:gap-6 lg:gap-[20px]">
             {/* Contact us Badge */}
@@ -350,7 +381,7 @@ export default function AssistLifeStageTransition() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Footer */}
       <Footer />
