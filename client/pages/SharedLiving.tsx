@@ -25,6 +25,226 @@ export default function SharedLiving() {
         </div>
       </section>
 
+      {/* Article Section */}
+      <section className="flex justify-center items-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8">
+        <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10 max-w-[1080px] w-full">
+          {/* Top Part */}
+          <div className="flex flex-col justify-center items-start gap-4 sm:gap-5 lg:gap-[20px] w-full">
+            {/* Divider */}
+            <div className="flex h-4 lg:h-[17px] flex-col justify-center items-center w-full">
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#4A4A4A] to-[#121212]"></div>
+            </div>
+
+            {/* Navigation */}
+            <div className="flex items-center gap-2">
+              <div className="flex justify-center items-center gap-0.5">
+                <div className="flex w-[18px] h-[18px] flex-col items-start">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.7893 14.9378C14.7109 15.0164 14.6178 15.0788 14.5152 15.1214C14.4127 15.164 14.3027 15.1859 14.1917 15.1859C14.0806 15.1859 13.9707 15.164 13.8681 15.1214C13.7656 15.0788 13.6724 15.0164 13.594 14.9378L6.03613 7.37988V12.6533C6.03613 12.8771 5.94724 13.0917 5.789 13.2499C5.63077 13.4082 5.41616 13.4971 5.19238 13.4971C4.96861 13.4971 4.754 13.4082 4.59576 13.2499C4.43753 13.0917 4.34863 12.8771 4.34863 12.6533V5.34082C4.34863 5.11704 4.43753 4.90243 4.59576 4.7442C4.754 4.58597 4.96861 4.49707 5.19238 4.49707H12.5049C12.7287 4.49707 12.9433 4.58597 13.1015 4.7442C13.2597 4.90243 13.3486 5.11704 13.3486 5.34082C13.3486 5.5646 13.2597 5.77921 13.1015 5.93744C12.9433 6.09568 12.7287 6.18457 12.5049 6.18457H7.23145L14.7893 13.7439C14.8678 13.8222 14.93 13.9153 14.9725 14.0177C15.0149 14.1201 15.0368 14.2299 15.0368 14.3408C15.0368 14.4517 15.0149 14.5615 14.9725 14.6639C14.93 14.7664 14.8678 14.8594 14.7893 14.9378Z" fill="#4A4A4A"/>
+                  </svg>
+                </div>
+                <div className="flex flex-col justify-center items-start rounded-[74px]">
+                  <div className="text-[#121212] font-inter text-base font-bold leading-6 tracking-[0.16px]">
+                    Home
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Title Description */}
+            <div className="flex w-full flex-col justify-center items-start gap-1">
+              <div className="flex w-full max-w-[700px] flex-col items-start">
+                <h2 className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-normal leading-[1.5] tracking-[0.28px] mb-4">
+                  Creating Harmony and Independence in Shared Living Spaces
+                </h2>
+              </div>
+              <div className="flex w-full max-w-[800px] flex-col items-start">
+                <p className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                  Maintaining a safe and comfortable shared living space is essential for fostering independence and
+                  building meaningful connections. At Quality Care, our Assistance with Tasks – Shared Living service
+                  provides support to help you navigate the daily responsibilities of living with others. From household
+                  management to fostering cooperative relationships, we're here to ensure your shared living
+                  experience is positive and fulfilling.
+                </p>
+              </div>
+            </div>
+
+            {/* Divider with opacity */}
+            <div className="flex h-4 lg:h-[17px] flex-col justify-center items-center w-full opacity-80">
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#4A4A4A] to-transparent"></div>
+            </div>
+          </div>
+
+          {/* Main Content with Image */}
+          <div className="flex flex-col justify-center items-center gap-6 sm:gap-7 lg:gap-[30px] w-full rounded-2xl bg-white/5 p-4 sm:p-6 lg:p-7">
+            {/* Image */}
+            <div className="w-full max-w-[1024px] h-[300px] sm:h-[400px] lg:h-[559px] rounded-lg overflow-hidden border border-gray-300/50">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/628b68e11e371604ccffa471b6edb8609837522a?width=2048"
+                alt="People in shared living space - person with laptop and person in wheelchair"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Content Sections */}
+            <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+              {/* Our Approach Section */}
+              <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+                <div className="flex w-full max-w-[1024px] flex-col items-start">
+                  <h3 className="text-[#247FBF] font-inter text-lg sm:text-xl lg:text-2xl font-normal leading-[1.4] tracking-[0.24px] mb-6">
+                    Our Approach to Shared Living Assistance
+                  </h3>
+                </div>
+
+                <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 lg:gap-[20px] w-full">
+                  <div className="flex w-full max-w-[1024px] flex-col justify-center items-start gap-1">
+                    <div className="flex flex-col items-start w-full space-y-4 sm:space-y-5 lg:space-y-6">
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Household Management Support</span><br />
+                          We assist with daily household tasks such as cleaning, cooking, laundry, and organizing, ensuring your living environment is clean, safe, and welcoming.
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Encouraging Cooperation</span><br />
+                          Living in a shared space requires teamwork and communication. We help facilitate positive relationships and mutual respect among housemates.
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Skill Development for Independence</span><br />
+                          Our team works with you to develop the skills needed to manage shared responsibilities, from budgeting and meal preparation to time management.
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-start w-full">
+                        <div className="text-[#000] font-inter text-sm sm:text-base font-normal leading-[1.2]">
+                          <span className="font-bold">Ongoing Guidance and Mediation</span><br />
+                          We provide ongoing support to resolve conflicts, maintain harmony, and adapt to the dynamics of shared living spaces.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Horizontal Divider */}
+                  <div className="h-px w-full bg-gray-400/30"></div>
+
+                  {/* Why Choose Us Section */}
+                  <div className="flex flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-[10px] w-full">
+                    <div className="flex w-full max-w-[1024px] flex-col items-start">
+                      <h3 className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
+                        Why Choose Us for Shared Living Assistance?
+                      </h3>
+                    </div>
+
+                    <div className="flex flex-col justify-center items-center w-full">
+                      <div className="flex flex-col items-start w-full">
+                        <div className="flex flex-col items-start w-full space-y-2">
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Experienced support in creating a harmonious and functional household.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Focus on building essential life skills for independence.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Personalized assistance tailored to your shared living needs.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Examples Section */}
+                  <div className="flex flex-col justify-center items-center gap-2 sm:gap-3 lg:gap-[10px] w-full">
+                    <div className="flex w-full max-w-[1024px] flex-col items-start">
+                      <h3 className="text-[#247FBF] font-inter text-xl sm:text-2xl lg:text-[28px] font-bold leading-[1.5] tracking-[0.28px]">
+                        Examples of Shared Living Support We Provide:
+                      </h3>
+                    </div>
+
+                    <div className="flex flex-col justify-center items-center w-full">
+                      <div className="flex flex-col items-start w-full">
+                        <div className="flex flex-col items-start w-full space-y-2">
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Cooking and meal planning for a group.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Cleaning and maintaining communal spaces.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Managing household budgets and schedules.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex justify-start items-start w-full">
+                            <div className="flex w-6 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">•</div>
+                            </div>
+                            <div className="flex flex-1 flex-col items-start">
+                              <div className="text-[#121212] font-inter text-sm sm:text-base font-normal leading-[1.55] tracking-[0.32px]">
+                                Facilitating communication and resolving conflicts among housemates.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact CTA Section */}
       <section className="flex justify-center items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-[240px]">
         <div className="flex h-auto lg:h-[278px] w-full justify-center items-center rounded-lg bg-[rgba(255,255,255,0.05)] py-8 sm:py-12 lg:py-8">
