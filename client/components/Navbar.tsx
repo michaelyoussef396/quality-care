@@ -84,7 +84,7 @@ export default function Navbar() {
                         <li><Link to="/DevelopmentLifeSkills" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Development-Life Skills</Link></li>
                         <li><Link to="/AssistiveProducts" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assistive Products</Link></li>
                         <li><Link to="/ParticipateInCommunity" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Participate in Community</Link></li>
-                        <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Group/Centre Activities</a></li>
+                        <li><Link to="/GroupCentreActivities" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Group/Centre Activities</Link></li>
                       </ul>
                     </div>
                   </div>
@@ -203,7 +203,7 @@ export default function Navbar() {
                           <Link to="/DevelopmentLifeSkills" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Development-Life Skills</Link>
                           <Link to="/AssistiveProducts" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Assistive Products</Link>
                           <Link to="/ParticipateInCommunity" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Participate in Community</Link>
-                          <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Group/Centre Activities</a>
+                          <Link to="/GroupCentreActivities" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Group/Centre Activities</Link>
                         </div>
                       </div>
                     </div>
