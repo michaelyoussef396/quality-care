@@ -1,12 +1,16 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm run build:client",
+  "version": 2,
+  "name": "quality-care",
+  "framework": null,
+  "buildCommand": "pnpm install && pnpm run build:client",
   "outputDirectory": "dist/spa",
   "installCommand": "pnpm install",
-  "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ],
