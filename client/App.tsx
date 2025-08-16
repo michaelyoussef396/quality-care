@@ -16,6 +16,7 @@ import AssistTravelTransport from "./pages/AssistTravelTransport";
 import SharedLiving from "./pages/SharedLiving";
 import CommunityParticipation from "./pages/CommunityParticipation";
 import DevelopmentLifeSkills from "./pages/DevelopmentLifeSkills";
+import AssistiveProducts from "./pages/AssistiveProducts";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
