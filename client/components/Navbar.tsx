@@ -70,8 +70,8 @@ export default function Navbar() {
                     <div className="mb-5">
                       <h3 className="text-[#247FBF] text-sm font-semibold mb-3 uppercase tracking-wider font-inter">Personal Support</h3>
                       <ul className="space-y-2">
-                        <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Accommodation Tenancy</a></li>
-                        <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assist-Life Stage, Transition</a></li>
+                        <li><Link to="/AccommodationTenancy" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Accommodation Tenancy</Link></li>
+                        <li><Link to="/AssistLifeStageTransition" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assist-Life Stage, Transition</Link></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assist-Personal Activities</a></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Assist-Travel/Transport</a></li>
                         <li><a href="#" className="text-white/80 text-sm hover:text-[#247FBF] block py-1 transition-colors font-inter">Shared Living</a></li>
@@ -188,8 +188,8 @@ export default function Navbar() {
                       <div>
                         <h3 className="text-[#247FBF] text-sm font-semibold mb-2 px-3 uppercase tracking-wider font-inter">Personal Support</h3>
                         <div className="space-y-1">
-                          <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Accommodation Tenancy</a>
-                          <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Assist-Life Stage, Transition</a>
+                          <Link to="/AccommodationTenancy" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Accommodation Tenancy</Link>
+                          <Link to="/AssistLifeStageTransition" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter" onClick={() => setIsMobileMenuOpen(false)}>Assist-Life Stage, Transition</Link>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Assist-Personal Activities</a>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Assist-Travel/Transport</a>
                           <a href="#" className="block px-6 py-2 text-white/80 text-base hover:text-[#247FBF] hover:bg-white/5 rounded transition-colors font-inter">Shared Living</a>
